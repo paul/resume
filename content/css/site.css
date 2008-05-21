@@ -29,6 +29,8 @@ a                 { color: <%= @page.color['link'] %>; }
 a:hover           { color: <%= @page.color['link-hover'] %>; }
 blockquote        { color: <%= @page.color['blockquote'] %>; }
 
+a img { text-decoration: none; margin: 0 1ex 0 0; }
+
 pre {
   background: <%= @page.color['box-bg'] %>;
   border:     1px solid <%= @page.color['border'] %>;

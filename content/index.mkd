@@ -1,0 +1,52 @@
+---
+title: Summary
+filter:
+  - erb
+  - markdown
+---
+Professional Summary
+---
+
+A highly-motivated professional software developer, with a proven track record of developing software through all stages, from idea to deployment. My current areas of focus are ReST web services and Ruby.
+
+Accomplishments
+---
+
+ - Re-architected an existing infrastructure to be more scalable and maintainable, as well as achieved and order of mangitude improvement in processing capability. 
+ - Supported and encouraged a team to transition to using automated unit and functional testing where there previously was none.
+ - Successfully changed a team to using agile methodologies for software development, replacing the previous ad-hoc methods.
+ - Created specifications from (sometimes ambiguous) customer and business stakeholder requirements.
+ - Participated in design and implementation of a complete rewrite of a open-source project. Currently one of the lead developers, and mentor newcomers and developers in contributing.
+
+Skills
+---
+
+ - Extensive experience with a wide range of web-related technologies including HTML, CSS, Javascript, ReST, JSON and XML.
+ - Strong understanding of dynamic languages, primarily Ruby, but also professional experience with Python, Perl, Javascript and Erlang.
+ - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, StrokeDB, and Amazon's S3 service.
+
+Experience
+---
+
+ - Senior Software Engineer<br />
+   Absolute Performance, Inc<br />
+   Boulder, CO<br />
+   2006 - Present
+
+ - Senior Web Developer<br />
+   Input Output Unlimited<br />
+   Indianapolis, IN<br />
+   2002 - 2006
+
+Education
+---
+
+ - Bachelor of Science (Incomplete)<br />
+   Physics<br />
+   Indiana University-Purdue University Indianapolis
+
+ - Associate of Applied Science <br />
+   Computer Networking<br />
+   ITT-Tech<br />
+   Indianapolis, IN
+
