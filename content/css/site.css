@@ -66,4 +66,23 @@ p.title {
 
 #header p.title { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
 
+a.icon {
+  padding-left: 18px;
+  background-position: top 1px;
+  background-repeat:   no-repeat;
+  display: inline-block;
+}
+
+a.pdf {
+  background-image: url(/images/pdf-icon.gif);
+}
+
+a.doc {
+  background-image: url(/images/doc-icon.gif);
+}
+
+a.pages {
+  background-image: url(/images/pages-icon.gif);
+}
+
 /* EOF */
