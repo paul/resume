@@ -1,0 +1,6 @@
+# Resume of Paul Sadauskas
+
+Generated with [nanoc](http://nanoc.stoneship.org/).
+
+View at [http://sadauskas.us](http://sadauskas.us).
+
