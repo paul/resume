@@ -1,4 +1,3 @@
-
 Professional Summary
 ---
 
@@ -31,15 +30,20 @@ Skills
 Experience
 ---
 
+ - Senior Software Engineer<br />
+   LivingSocial<br />
+   Boulder, CO<br />
+   Nov 2011 - Present
+
  - Software Engineer<br />
    Strobe, Inc<br />
    San Francisco, CA<br />
-   2011 - Present
+   May 2011 - Oct 2011
 
  - Senior Software Engineer<br />
    Absolute Performance, Inc<br />
    Boulder, CO<br />
-   2006 - 2011
+   2006 - May 2011
 
  - Senior Web Developer<br />
    Input Output Unlimited<br />
