@@ -1,14 +1,14 @@
 Professional Summary
 ---
 
-A highly-motivated professional software developer, with a proven track record of developing software through all stages, from idea to deployment. My current areas of focus are using Rest web services and Ruby to solve problems for other developers.
+A highly-motivated professional software developer, with a proven track record of developing software through all stages, from idea to deployment. My current areas of focus are using REST web services and Ruby to solve problems for other developers. I also thrive in a fast-paced startup environment, and am capable at all levels of development and deployment of software applications.
 
 Accomplishments
 ---
 
  - Re-architected an existing infrastructure to be more scalable and maintainable, as well as achieved and order of magnitude improvement in processing capability.
  - Supported and encouraged a team to transition to using automated unit and functional testing where there previously was none.
- - Successfully changed a team to using agile methodologies for software development, replacing the previous ad-hoc methods.
+ - Successfully led an engineering team to using agile methodologies for software development, replacing the previous ad-hoc methods.
  - Created specifications from (sometimes ambiguous) customer and business stakeholder requirements.
  - Participated in design and implementation of a complete rewrite of DataMapper. Formerly one of the lead developers, and mentored newcomers and developers with contributing.
  - Practical experience with EC2 and Rackspace Cloud, as well as bare-metal servers. Set up continuous integration and continuous deployment software and processes.
@@ -16,13 +16,13 @@ Accomplishments
 Skills
 ---
 
- - Extensive experience with a wide range of web-related technologies including HTTP, HTML, CSS, Javascript, ReST, JSON and XML.
- - Strong understanding of dynamic languages, primarily Ruby, but also professional experience with Python, Perl, Javascript and Erlang.
- - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, MongoDB, and Amazon's S3 service.
+ - Extensive experience with a wide range of web-related technologies including HTTP, HTML5, CSS, Javascript, CoffeeScript, REST, JSON.
+ - Strong understanding of dynamic languages, primarily Ruby, but also professional experience with Python, Perl, Javascript, Clojure and Erlang.
+ - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, MongoDB, Redis, and Amazon's S3 service.
  - Experience with provisioning and automated deployment of load balancers, web servers, databases, Ruby applications, and the other tools and utilities needed for a smoothly running application stack.
  - Fluent with the Unix command line and utilities, Mac OSX, Vim, git, ssh...
  - Minor contributor of patches and documentation to various open source projects, including Rack, Rails, MongoDB, collectd, and Homebrew.
- - Strong design ability, focusing in functional web design and web service APIs.
+ - Strong architectural design ability, focusing in functional web design and web service APIs.
  - Experience with scalability through distributing simple tasks across multiple processing nodes.
  - Spirited proponent of behavior-driven development, and the principles of minimalist design and development.
 
@@ -30,10 +30,15 @@ Skills
 Experience
 ---
 
+ - Developer<br />
+   GitHub<br />
+   San Francisco, CA<br />
+   Jun 2012 - Nov 2012
+
  - Senior Software Engineer<br />
    LivingSocial<br />
    Boulder, CO<br />
-   Nov 2011 - Present
+   Nov 2011 - Jun 2012
 
  - Software Engineer<br />
    Strobe, Inc<br />
@@ -64,15 +69,10 @@ Conference Talks
  - Mountain West Ruby Conference 2009<br />
    *Writing Adapters for DataMapper*
 
-Education
+Links
 ---
 
- - Bachelor of Science (Incomplete)<br />
-   Physics<br />
-   Indiana University-Purdue University Indianapolis
+ - Blog: http://blog.theamazingrando.com
+ - Github: https://github.com/paul
 
- - Associate of Applied Science <br />
-   Computer Networking<br />
-   ITT-Tech<br />
-   Indianapolis, IN
 
