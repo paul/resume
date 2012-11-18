@@ -37,3 +37,8 @@ a.doc {
 a.pages {
   background-image: url(/images/pages-icon.gif);
 }
+
+@media print {
+  #content { font-size: 12px; }
+  #about { display: none; }
+}
