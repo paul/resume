@@ -10,9 +10,6 @@
    <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection" />
    <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print" />
 
-   <!-- CodeRay syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/coderay.css" type="text/css" />
-
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
 </head>
@@ -21,12 +18,12 @@
 <div class="container">
 
    <div class="column span-20 prepend-2 append-2 first last" id="header">
-     <p class="title">Resume of Paul Sadauskas</p>
+     <h1 class="title">Resume of Paul Sadauskas</h1>
      <hr>
    </div>
 
    <div class="column span-15 prepend-2 first">
-      <%= content %>
+      <%= yield %>
    </div>
 
    <div class="column span-5 append-2 last">
@@ -59,10 +56,10 @@
       <h4>Resume Source</h4>
       <ul>
         <li>
-          <a href="https://github.com/paul/resume/blob/master/content/index.markdown"> Markdown </a>
+          <a href="https://github.com/paul/resume/blob/master/resume.mkd">Markdown</a>
         </li>
         <li>
-          <a href="https://github.com/paul/resume/">Github Repo </a>
+          <a href="https://github.com/paul/resume/">Github Repo</a>
         </li>
       </ul>
 

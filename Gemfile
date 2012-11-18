@@ -2,6 +2,12 @@
 source "http://rubygems.org"
 
 gem "rake"
-gem "nanoc"
+
+gem "sinatra"
+
+gem "erubis"
 gem "kramdown"
-gem "adsf"
+
+group :development do
+  gem "thin"
+end
