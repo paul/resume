@@ -72,7 +72,7 @@ Conference Talks
 Links
 ---
 
- - Blog: http://blog.theamazingrando.com
- - Github: https://github.com/paul
+ - Blog: [http://blog.theamazingrando.com](http://blog.theamazingrando.com)
+ - Github: [https://github.com/paul](https://github.com/paul)
 
 
