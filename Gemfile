@@ -8,6 +8,4 @@ gem "sinatra"
 gem "erubis"
 gem "kramdown"
 
-group :development do
-  gem "thin"
-end
+gem "thin"
