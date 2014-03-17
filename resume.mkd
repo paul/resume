@@ -18,7 +18,7 @@ Skills
 
  - Extensive experience with a wide range of web-related technologies including HTTP, HTML5, CSS, Javascript, CoffeeScript, REST, JSON.
  - Strong understanding of dynamic languages, primarily Ruby, but also professional experience with Python, Perl, Javascript, Clojure and Erlang.
- - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, MongoDB, Redis, and Amazon's S3 service.
+ - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, Riak, MongoDB, Redis, and Amazon's S3 service.
  - Experience with provisioning and automated deployment of load balancers, web servers, databases, Ruby applications, and the other tools and utilities needed for a smoothly running application stack.
  - Fluent with the Unix command line and utilities, Mac OSX, Vim, git, ssh...
  - Minor contributor of patches and documentation to various open source projects, including Rack, Rails, MongoDB, collectd, and Homebrew.
@@ -31,8 +31,13 @@ Experience
 ---
 
  - Developer<br />
+   Librato<br />
+   San Francisco, CA (remote)<br />
+   Dec 2012 - Present
+
+ - Developer<br />
    GitHub<br />
-   San Francisco, CA<br />
+   San Francisco, CA (remote)<br />
    Jun 2012 - Nov 2012
 
  - Senior Software Engineer<br />
@@ -42,7 +47,7 @@ Experience
 
  - Software Engineer<br />
    Strobe, Inc<br />
-   San Francisco, CA<br />
+   San Francisco, CA (remote)<br />
    May 2011 - Oct 2011
 
  - Senior Software Engineer<br />
