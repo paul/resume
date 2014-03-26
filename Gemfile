@@ -3,10 +3,14 @@ source "http://rubygems.org"
 
 gem "rake"
 
-gem "sinatra"
+gem "guard"
+gem "guard-rake"
+gem "guard-livereload"
 
-gem "erubis"
-gem "kramdown"
+gem "slim"
+gem "redcarpet"
 
-gem "thin"
+gem "compass"
+
+gem "heel"
 
