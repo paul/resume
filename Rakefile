@@ -21,9 +21,9 @@ Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, 'markdown', 'mkd', 'md'
 Tilt.prefer Tilt::RedcarpetTemplate::Redcarpet2, 'markdown'
 
 desc "Render the page"
-task :render => ["index.html", 'css/main.css']
+task :render => ["gh-pages/index.html", 'gh-pages/css/main.css']
 
-file "index.html" => ["resume.mkd", "layout.slim", __FILE__] do
+file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
   layout = Tilt.new('layout.slim')
   # template = Tilt.new('resume.mkd')
   # Tilt won't let me pass the right options to redcarpet
@@ -34,6 +34,6 @@ file "index.html" => ["resume.mkd", "layout.slim", __FILE__] do
   File.open("index.html", "w") { |f| f.write(content) }
 end
 
-file "css/main.css" => "css/main.scss" do
+file "gh-pages/css/main.css" => "css/main.scss" do
   `compass compile css/main.scss`
 end
