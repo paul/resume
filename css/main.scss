@@ -1,7 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
 @import "compass/typography/lists/bullets";
-@import "compass/typography/lists/inline-block-list";
+@import "compass/typography/lists/inline-list";
+@import "compass/typography/text/replacement";
 
 $header: #80d6f8;
 $text: #222;
@@ -36,7 +37,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: $text;
-  width: 70em;
+  width: 60em;
   margin: auto;
 }
 
@@ -45,188 +46,172 @@ h1, h2, h3 {
   margin: 0;
 }
 
-#page {
-  margin: 1em;
+a {
+  color: $header;
 }
 
-header {
+#page {
+  margin: 1em;
   position: relative;
+}
 
-  #title {
-    width: 70%;
+#paul-sadauskas {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4em;
+}
 
-    h1, h2 {
-      text-transform: uppercase;
-      margin: 0;
-    }
+#senior-software-engineer {
+  @include fancy-header;
+  font-size: 2.5em;
+}
 
-    h1 {
-      font-size: 4em;
-    }
+#contact-info {
+  @include squish-text;
 
-    h2 {
-      @include fancy-header;
-      font-size: 3em;
-    }
-  }
-
-  #contact {
+  & + ul {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 3em;
 
-    ul {
-      @include no-bullets;
+    @include no-bullets;
 
-      li {
-        margin-bottom: 1em;
+    li {
+      margin-bottom: 0.75em;
+      @include fancy-header;
 
-        i {
-          font-size: 1.5em;
-          line-height: 2em;
-          float: left;
-          width: 1em;
+      &:before {
+        font-family: FontAwesome;
+        font-size: 1.75em;
+        font-weight: 300;
+        margin: 0 0.5em 0 -1.5em;
+        display: inline-block;
+        width: 1em;
+        position: relative;
+        top: 8px;
+        color: #666;
+      }
+
+      &:first-child {
+        &:before {
+          content: "\f003";
         }
+      }
 
-        .address {
-          margin-left: 3em;
+      &:nth-child(2) {
+        &:before {
+          content: "\f13b";
         }
+      }
 
-        h1 {
-          @include fancy-header;
-          font-size: 1em;
+      &:nth-child(3) {
+        &:before {
+          content: "\f09b";
         }
+      }
 
-        h2 {
-          font-size: 1em;
+    }
 
-          a {
-            color: $text;
-            text-decoration: none;
+    a {
+      display: block;
+      color: $text;
+      text-decoration: none;
+      text-transform: none;
 
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
 
 }
 
-header, section {
-  margin-bottom: 3em;
-}
-
-#summary {
-  width: 66%;
-  margin: 0 auto;
+#passionate-about-the-craft-of-creating-software {
+  display: block;
+  margin: 3em auto 0 auto;
+  width: 80%;
   text-align: center;
+
+  & + p {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+  }
 }
 
-#main {
-  float: left;
-  width: 50em;
+#professional-experience,
+#notable-open-source-projects,
+#conference-talks,
+#professional-skills-and-tools {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  margin-top: 1em;
+
+  &:before {
+    font-family: FontAwesome;
+    color: $header;
+    content: "\f105";
+  }
+
+  & + ul {
+    font-size: 1em;
+    text-transform: none;
+    @include no-bullets;
+    padding: 0;
+
+    li > p {
+      width: 100%;
+
+      & > em { // dates
+        float: right;
+      }
+
+      & > mark { // job title
+        background-color: transparent;
+        @include fancy-header;
+
+        &:after {
+          color: $text;
+          content: " @";
+        }
+
+      }
+
+      & > a {
+        color: $text;
+      }
+
+
+    }
+  }
 }
 
-#sidebar {
-  width: 18em;
-  margin-left: 52em;
+#professional-skills-and-tools {
+
+  & + p {
+    & + ul {
+      @include no-bullets;
+    }
+  }
 }
 
-#experience, #talks, #open-source, #skills, #tools {
+footer {
+  margin-bottom: 3em;
+
   h1 {
     text-transform: uppercase;
-    font-size: 1.6em;
-
-    &:before {
-      font-family: FontAwesome;
-      color: $header;
-      content: "\f105";
-    }
-  }
-}
-
-ol.jobs, ol.talks, ol.oss {
-  @include no-bullets;
-  padding: 0;
-
-  .position, .conf, .project {
-    float: left;
-    width: 11em;
-  }
-
-  .description {
-    margin-left: 12em;
-    margin-bottom: 1em;
-
-    .title {
-      @include fancy-header;
-    }
-
-    ul {
-      @include no-bullets;
-      margin: 0;
-      padding: 0;
-      font-size: 0.82em;
-    }
-  }
-
-  a {
-    color: $text;
-  }
-}
-
-#skills, #tools {
-  header {
     margin: 0;
-    font-size: 0.8em;
+    font-size: 1.2em;
+  }
 
-    ol {
-      @include inline-block-list;
-      margin-left: 30%;
+  ul {
+    @include inline-list;
 
-      li {
-        width: 30%;
-        text-align: center;
-      }
+    li {
+      padding-right: 2em;
     }
   }
 }
-
-.skills {
-  @include no-bullets;
-  padding: 0;
-
-  li {
-    line-height: 2.2em;
-    width: 100%;
-  }
-
-  .name {
-    display: inline-block;
-    width: 6em;
-  }
-
-  .meter {
-    display: inline-block;
-    height: 20px;
-    width: 12em;
-    position: relative;
-
-    & > span {
-      display: inline-block;
-      height: 100%;
-      border: 1px solid $header;
-      position: relative;
-      overflow: hidden;
-    }
-  }
-
-
-
-}
-
-

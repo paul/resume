@@ -3,6 +3,7 @@
 
 guard :rake, task: :render do
   watch("layout.slim")
+  watch("resume.mkd")
   watch("css/main.scss")
 end
 

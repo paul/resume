@@ -1,16 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 @media print {
-  /* line 15, main.scss */
+  /* line 16, main.scss */
   body {
     zoom: 40%;
     color: #000;
   }
-  /* line 19, main.scss */
+  /* line 20, main.scss */
   body a {
     color: black;
   }
 
-  /* line 22, main.scss */
+  /* line 23, main.scss */
   #printFooter {
     position: fixed;
     top: 0;
@@ -18,252 +18,236 @@
   }
 }
 @media screen {
-  /* line 30, main.scss */
+  /* line 31, main.scss */
   #printFooter {
     display: none;
   }
 }
-/* line 35, main.scss */
+/* line 36, main.scss */
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #222222;
-  width: 70em;
+  width: 60em;
   margin: auto;
 }
 
-/* line 43, main.scss */
+/* line 44, main.scss */
 h1, h2, h3 {
   font-weight: 300;
   margin: 0;
 }
 
-/* line 48, main.scss */
-#page {
-  margin: 1em;
+/* line 49, main.scss */
+a {
+  color: #80d6f8;
 }
 
-/* line 52, main.scss */
-header {
+/* line 53, main.scss */
+#page {
+  margin: 1em;
   position: relative;
 }
-/* line 55, main.scss */
-header #title {
-  width: 70%;
-}
+
 /* line 58, main.scss */
-header #title h1, header #title h2 {
+#paul-sadauskas {
   text-transform: uppercase;
   margin: 0;
-}
-/* line 63, main.scss */
-header #title h1 {
   font-size: 4em;
 }
-/* line 67, main.scss */
-header #title h2 {
+
+/* line 64, main.scss */
+#senior-software-engineer {
   color: #80d6f8;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2.5em;
 }
-/* line 73, main.scss */
-header #contact {
+
+/* line 69, main.scss */
+#contact-info {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+/* line 72, main.scss */
+#contact-info + ul {
   position: absolute;
   top: 0;
   right: 0;
   padding-right: 3em;
-}
-/* line 79, main.scss */
-header #contact ul {
   list-style: none;
 }
 /* line 11, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-header #contact ul li {
+#contact-info + ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-/* line 82, main.scss */
-header #contact ul li {
-  margin-bottom: 1em;
-}
-/* line 85, main.scss */
-header #contact ul li i {
-  font-size: 1.5em;
-  line-height: 2em;
-  float: left;
-  width: 1em;
-}
-/* line 92, main.scss */
-header #contact ul li .address {
-  margin-left: 3em;
-}
-/* line 96, main.scss */
-header #contact ul li h1 {
+/* line 80, main.scss */
+#contact-info + ul li {
+  margin-bottom: 0.75em;
   color: #80d6f8;
   text-transform: uppercase;
-  font-size: 1em;
 }
-/* line 101, main.scss */
-header #contact ul li h2 {
-  font-size: 1em;
+/* line 84, main.scss */
+#contact-info + ul li:before {
+  font-family: FontAwesome;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0 0.5em 0 -1.5em;
+  display: inline-block;
+  width: 1em;
+  position: relative;
+  top: 8px;
+  color: #666;
 }
-/* line 104, main.scss */
-header #contact ul li h2 a {
+/* line 97, main.scss */
+#contact-info + ul li:first-child:before {
+  content: "\f003";
+}
+/* line 103, main.scss */
+#contact-info + ul li:nth-child(2):before {
+  content: "\f13b";
+}
+/* line 109, main.scss */
+#contact-info + ul li:nth-child(3):before {
+  content: "\f09b";
+}
+/* line 116, main.scss */
+#contact-info + ul a {
+  display: block;
   color: #222222;
   text-decoration: none;
+  text-transform: none;
 }
-/* line 108, main.scss */
-header #contact ul li h2 a:hover {
+/* line 122, main.scss */
+#contact-info + ul a:hover {
   text-decoration: underline;
 }
 
-/* line 119, main.scss */
-header, section {
-  margin-bottom: 3em;
+/* line 130, main.scss */
+#passionate-about-the-craft-of-creating-software {
+  display: block;
+  margin: 3em auto 0 auto;
+  width: 80%;
+  text-align: center;
 }
-
-/* line 123, main.scss */
-#summary {
+/* line 136, main.scss */
+#passionate-about-the-craft-of-creating-software + p {
   width: 66%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
-/* line 129, main.scss */
-#main {
-  float: left;
-  width: 50em;
-}
-
-/* line 134, main.scss */
-#sidebar {
-  width: 18em;
-  margin-left: 52em;
-}
-
-/* line 140, main.scss */
-#experience h1, #talks h1, #open-source h1, #skills h1, #tools h1 {
+/* line 148, main.scss */
+#professional-experience,
+#notable-open-source-projects,
+#conference-talks,
+#professional-skills-and-tools {
   text-transform: uppercase;
   font-size: 1.6em;
+  margin-top: 1em;
 }
-/* line 144, main.scss */
-#experience h1:before, #talks h1:before, #open-source h1:before, #skills h1:before, #tools h1:before {
+/* line 153, main.scss */
+#professional-experience:before,
+#notable-open-source-projects:before,
+#conference-talks:before,
+#professional-skills-and-tools:before {
   font-family: FontAwesome;
   color: #80d6f8;
   content: "\f105";
 }
-
-/* line 152, main.scss */
-ol.jobs, ol.talks, ol.oss {
+/* line 159, main.scss */
+#professional-experience + ul,
+#notable-open-source-projects + ul,
+#conference-talks + ul,
+#professional-skills-and-tools + ul {
+  font-size: 1em;
+  text-transform: none;
   list-style: none;
   padding: 0;
 }
 /* line 11, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-ol.jobs li, ol.talks li, ol.oss li {
+#professional-experience + ul li,
+#notable-open-source-projects + ul li,
+#conference-talks + ul li,
+#professional-skills-and-tools + ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-/* line 156, main.scss */
-ol.jobs .position, ol.jobs .conf, ol.jobs .project, ol.talks .position, ol.talks .conf, ol.talks .project, ol.oss .position, ol.oss .conf, ol.oss .project {
-  float: left;
-  width: 11em;
-}
-/* line 161, main.scss */
-ol.jobs .description, ol.talks .description, ol.oss .description {
-  margin-left: 12em;
-  margin-bottom: 1em;
-}
 /* line 165, main.scss */
-ol.jobs .description .title, ol.talks .description .title, ol.oss .description .title {
+#professional-experience + ul li > p,
+#notable-open-source-projects + ul li > p,
+#conference-talks + ul li > p,
+#professional-skills-and-tools + ul li > p {
+  width: 100%;
+}
+/* line 168, main.scss */
+#professional-experience + ul li > p > em,
+#notable-open-source-projects + ul li > p > em,
+#conference-talks + ul li > p > em,
+#professional-skills-and-tools + ul li > p > em {
+  float: right;
+}
+/* line 172, main.scss */
+#professional-experience + ul li > p > mark,
+#notable-open-source-projects + ul li > p > mark,
+#conference-talks + ul li > p > mark,
+#professional-skills-and-tools + ul li > p > mark {
+  background-color: transparent;
   color: #80d6f8;
   text-transform: uppercase;
 }
-/* line 169, main.scss */
-ol.jobs .description ul, ol.talks .description ul, ol.oss .description ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 0.82em;
+/* line 176, main.scss */
+#professional-experience + ul li > p > mark:after,
+#notable-open-source-projects + ul li > p > mark:after,
+#conference-talks + ul li > p > mark:after,
+#professional-skills-and-tools + ul li > p > mark:after {
+  color: #222222;
+  content: " @";
 }
-/* line 11, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-ol.jobs .description ul li, ol.talks .description ul li, ol.oss .description ul li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-}
-/* line 177, main.scss */
-ol.jobs a, ol.talks a, ol.oss a {
+/* line 183, main.scss */
+#professional-experience + ul li > p > a,
+#notable-open-source-projects + ul li > p > a,
+#conference-talks + ul li > p > a,
+#professional-skills-and-tools + ul li > p > a {
   color: #222222;
 }
 
-/* line 183, main.scss */
-#skills header, #tools header {
-  margin: 0;
-  font-size: 0.8em;
-}
-/* line 187, main.scss */
-#skills header ol, #tools header ol {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-  margin-left: 30%;
-}
-/* line 49, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-#skills header ol li, #tools header ol li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  white-space: nowrap;
-}
-/* line 191, main.scss */
-#skills header ol li, #tools header ol li {
-  width: 30%;
-  text-align: center;
-}
-
-/* line 199, main.scss */
-.skills {
+/* line 195, main.scss */
+#professional-skills-and-tools + p + ul {
   list-style: none;
-  padding: 0;
 }
 /* line 11, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-.skills li {
+#professional-skills-and-tools + p + ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-/* line 203, main.scss */
-.skills li {
-  line-height: 2.2em;
-  width: 100%;
+
+/* line 201, main.scss */
+footer {
+  margin-bottom: 3em;
 }
-/* line 208, main.scss */
-.skills .name {
-  display: inline-block;
-  width: 6em;
+/* line 204, main.scss */
+footer h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.2em;
+}
+/* line 210, main.scss */
+footer ul {
+  list-style-type: none;
+}
+/* line 5, ../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+footer ul, footer ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
 }
 /* line 213, main.scss */
-.skills .meter {
-  display: inline-block;
-  height: 20px;
-  width: 12em;
-  position: relative;
-}
-/* line 219, main.scss */
-.skills .meter > span {
-  display: inline-block;
-  height: 100%;
-  border: 1px solid #80d6f8;
-  position: relative;
-  overflow: hidden;
+footer ul li {
+  padding-right: 2em;
 }

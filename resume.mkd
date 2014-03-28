@@ -1,83 +1,147 @@
-Professional Summary
----
+# Paul Sadauskas
+## Senior Software Engineer
 
-A highly-motivated professional software developer, with a proven track record of developing software through all stages, from idea to deployment. My current areas of focus are using REST web services and Ruby to solve problems for other developers. I also thrive in a fast-paced startup environment, and am capable at all levels of development and deployment of software applications.
+# Contact Info
 
-Accomplishments
----
+ * Email   [paul@sadauskas.com][email]
+ * Website [blog.theamazingrando.com][blog]
+ * GitHub  [github.com/paul][github]
 
- - Re-architected an existing infrastructure to be more scalable and maintainable, as well as achieved and order of magnitude improvement in processing capability.
- - Supported and encouraged a team to transition to using automated unit and functional testing where there previously was none.
- - Successfully led an engineering team to using agile methodologies for software development, replacing the previous ad-hoc methods.
- - Created specifications from (sometimes ambiguous) customer and business stakeholder requirements.
- - Participated in design and implementation of a complete rewrite of DataMapper. Formerly one of the lead developers, and mentored newcomers and developers with contributing.
- - Practical experience with EC2 and Rackspace Cloud, as well as bare-metal servers. Set up continuous integration and continuous deployment software and processes.
+# Passionate about the craft of creating software
 
-Skills
----
+My passion is creating software that is a joy for fellow developers to both use and contribute to.  I am motivated to
+hone my craft of software development, to learn as much as I can about better ways to accomplish complicated tasks, and
+to build tools that are elegant, robust, and reliable.
 
- - Extensive experience with a wide range of web-related technologies including HTTP, HTML5, CSS, Javascript, CoffeeScript, REST, JSON.
- - Strong understanding of dynamic languages, primarily Ruby, but also professional experience with Python, Perl, Javascript, Clojure and Erlang.
- - In depth knowledge of open-source RDMBS software: PostgreSQL, MySQL and SQLite. Also familiar with non-relational DB technologies, such as CouchDB, Riak, MongoDB, Redis, and Amazon's S3 service.
- - Experience with provisioning and automated deployment of load balancers, web servers, databases, Ruby applications, and the other tools and utilities needed for a smoothly running application stack.
- - Fluent with the Unix command line and utilities, Mac OSX, Vim, git, ssh...
- - Minor contributor of patches and documentation to various open source projects, including Rack, Rails, MongoDB, collectd, and Homebrew.
- - Strong architectural design ability, focusing in functional web design and web service APIs.
- - Experience with scalability through distributing simple tasks across multiple processing nodes.
- - Spirited proponent of behavior-driven development, and the principles of minimalist design and development.
+# Professional Experience
+
+ * ==Engineer==
+   Librato
+   *Dec 2012 - Present*
+   * Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics
+   * Drove greater adoption of hypermedia concepts in the Librato API, both external and internal
+   * Took charge of a website security audit and fixes to user-facing websites and APIs
+
+ * ==API Developer==
+   GitHub
+   *Jun 2012 - Nov 2012*
+   * Helped design and implement hypermedia APIs for extracted micro-apps to communicate with the main app and each other
+   * Made upgrades to various aspects of the GitHub API, and communicated those changes to users
+   * Improved tooling for generation of documentation of the GitHub API
+
+ * ==Senior Software Engineer==
+   LivingSocial
+   *Nov 2011 - Jun 2012*
+   * Took part in upgrades and enhancements to the email newsletter and notification delivery system
+   * As a member of the API team, drove adoption of hypermedia APIs as part of a SOA refactor
+   * Helped refactor a large Rails app by following the principles of TDD and Martin Fowler's *Refactoring*
+
+ * ==Senior Software Engineer==
+   Strobe
+   *May 2011 - Oct 2011*
+   * Implemented a "ChatOps" continuous deployment system using Campfire and Chef
+   * Created from scratch the Chef cookbooks and recipes to deploy the entire Strobe infrastructure to AWS
+   * Set up a JenkinsCI cluster for continuous builds of Ruby/Rails, C++ and Clojure applications
+   * Assisted other team members in getting their projects in CI and Chef for deployment
+   * Helped implement a CDN/Caching proxy for customer assets in Clojure and Riak
+
+ * ==Senior Software Engineer==
+   Absolute Performance
+   *2006 - May 2011*
+   * Rewrote an existing monolithic Perl web application into multiple Rails applications
+   * Architected and developed new applications to interact with the main apps by hypermedia APIs
+   * Accomplished an order of magnitude improvement in capability by implementation of HTTP caching
+   * Revamped procedures to ship and deploy applications in various languages to remote customer sites
+   * Implemented new features in various NoSQL databases, TokyoTyrant, MongoDB, and Redis
+   * Encouraged the team to adopt automated Unit and Functional testing, as well as agile methods
+   * Engaged in continuous deployment on non-cloud physical hardware at various customer locations
+   * Invovled as primary architect of all layers of the stack, from Javascript UIs to database schemas
+
+ * ==Senior Web Developer==
+   InputOutput Unlimited
+   *2002 - 2006*
+   * On a contract basis, implemented numerous web applications in PHP and later in Rails
+   * Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements
+
+# Notable Open Source Projects
+
+ * [Resourceful][resourceful]
+   * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
+   * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
+   * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
+
+ * [progress_bar][progress_bar]
+   * A very simple implementation of a CLI progress bar, similar to the output of cURL
+   * Mentored contributors to keep thier pull requests small, focused, and well-tested
+   * It was originally intended primarily for personal use, but is not a dependency of several popular projects
+
+ * [DataMapper][data_mapper]
+   * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
+   * Responded to issues and pull requests, and mentored new developers to get involved
+   * Redesigned and implemented DataMapper Adapters interface
+   * Designed and implemented Migrations plugin
+
+ * Merb
+   * Heavily involved in design and implementation of Merb, preparing for release of 1.0
+   * Implemented support for conditional GET requests (304 response/Etag)
+   * Implemented correct handling of HTTP Accept header including negotiating
+     client and server priorities
+
+ * [Collectd][collectd]
+   * Contributed the tokyo-tyrant collection plugin
+   * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
+
+Additionally, I have made small code contributions to numerous other OSS projects, including Rails, Rack, Awesomewm, and Arch Linux.
+
+# Conference Talks
+
+ * [*Forms Don't Have to be this Complicated*][talk-forms]
+   Mountain.rb - Oct 2010
+
+ * [*How HTTP Already Solved All Your Performance Problems 20 Years Ago*][talk-http]
+   MountainWest RubyConf - Mar 2010
+
+ * [*Writing Adapters for DataMapper*][talk-datamapper]
+   MountainWest RubyConf - Mar 2009
+
+# Professional Skills and Tools
+
+*Ordered by proficiency*
+
+ * Rails
+ * Ruby
+ * HTTP
+ * HTML/CSS
+ * Coffeescript
+ * Postgres
+ * Javascript
+ * Linux
+ * Vagrant
+ * Chef
+ * AWS
+ * Bash/zsh
+ * Docker
+ * Redis
+ * MySQL
+ * Riak
+ * Go
+ * Cassandra
+ * Python
+ * Clojure
 
 
-Experience
----
+[email]:           mailto:paul@sadauskas.com
+[blog]:            http://blog.theamazingrando.com
+[github]:          https://github.com/paul
+[resourceful]:     https://github.com/paul/resourceful
+[progress_bar]:    https://github.com/paul/progress_bar
+[data_mapper]:     http://datamapper.org
+[collectd]:        https://collectd.org/wiki/index.php/Plugin:Write_HTTP
+[talk-forms]:      http://confreaks.com/videos/422-mountainrb2010-forms-don-t-have-to-be-this-complicated
+[talk-http]:       http://confreaks.com/videos/6-mwrc2010-how-http-already-solved-all-your-performance-problems-10-years-ago
+[talk-datamapper]: http://confreaks.com/videos/74-mwrc2009-writing-adapters-for-datamapper
 
- - Developer<br />
-   Librato<br />
-   San Francisco, CA (remote)<br />
-   Dec 2012 - Present
 
- - Developer<br />
-   GitHub<br />
-   San Francisco, CA (remote)<br />
-   Jun 2012 - Nov 2012
 
- - Senior Software Engineer<br />
-   LivingSocial<br />
-   Boulder, CO<br />
-   Nov 2011 - Jun 2012
-
- - Software Engineer<br />
-   Strobe, Inc<br />
-   San Francisco, CA (remote)<br />
-   May 2011 - Oct 2011
-
- - Senior Software Engineer<br />
-   Absolute Performance, Inc<br />
-   Boulder, CO<br />
-   2006 - May 2011
-
- - Senior Web Developer<br />
-   Input Output Unlimited<br />
-   Indianapolis, IN<br />
-   2002 - 2006
-
-Conference Talks
----
-
-[Videos of Talks on Confreaks](http://confreaks.net/presenters/6-paul-sadauskas)
-
- - Mountain.rb 2010<br />
-   *Forms Don't Have to be this Complicated*
-
- - Mountain West Ruby Conference 2010<br />
-   *How HTTP Already Solved All Your Performance Problems 10 Years Ago*
-
- - Mountain West Ruby Conference 2009<br />
-   *Writing Adapters for DataMapper*
-
-Links
----
-
- - Blog: [http://blog.theamazingrando.com](http://blog.theamazingrando.com)
- - Github: [https://github.com/paul](https://github.com/paul)
 
 

@@ -1,29 +1,35 @@
-require 'tilt'
 require 'slim'
+require 'tilt'
 require 'redcarpet'
-require 'yaml'
+
+
+mkd_renderer_opts = {
+  with_toc_data: true
+}
+mkd_renderer = Redcarpet::Render::HTML.new(mkd_renderer_opts)
+
+mkd_extensions = {
+  no_intra_emphasis: true,
+  lax_spacing: true,
+  highlight: true
+}
 
 Slim::Engine.set_default_options pretty: true
+Slim::Embedded.set_default_options markdown: mkd_extensions
 
-SKILLS = YAML::load_file("./skills.yaml")
-
-def render_skills(key)
-  output = "<ul class=\"skills\">"
-  SKILLS[key.to_s].each do |skill, ability|
-    output << "<li><span class=\"name\">#{skill}</span><div class=\"meter\"><span style=\"width: #{ability*10}%\"></span></span></li>"
-  end
-  output << "</ul>"
-  output
-end
+Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, 'markdown', 'mkd', 'md'
+Tilt.prefer Tilt::RedcarpetTemplate::Redcarpet2, 'markdown'
 
 desc "Render the page"
 task :render => ["index.html", 'css/main.css']
 
-file "index.html" => ["resume.mkd", "layout.slim", __FILE__, "skills.yaml"] do
+file "index.html" => ["resume.mkd", "layout.slim", __FILE__] do
   layout = Tilt.new('layout.slim')
-  template = Tilt.new('resume.mkd')
+  # template = Tilt.new('resume.mkd')
+  # Tilt won't let me pass the right options to redcarpet
+  mkd = Redcarpet::Markdown.new(mkd_renderer, mkd_extensions)
 
-  content = layout.render(self)
+  content = layout.render { mkd.render(File.read("resume.mkd")) }
 
   File.open("index.html", "w") { |f| f.write(content) }
 end
