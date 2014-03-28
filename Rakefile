@@ -31,7 +31,7 @@ file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
 
   content = layout.render { mkd.render(File.read("resume.mkd")) }
 
-  File.open("index.html", "w") { |f| f.write(content) }
+  File.open("gh-pages/index.html", "w") { |f| f.write(content) }
 end
 
 file "gh-pages/css/main.css" => "css/main.scss" do
