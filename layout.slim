@@ -11,76 +11,241 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
 
     link rel="stylesheet" href="css/normalize.css"
+    link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     link rel="stylesheet" href="css/main.css"
 
     script src="js/vendor/modernizr-2.7.1.min.js"
 
   body
 
-    header
+    #page
 
-      h1 Paul Sadauskas
-      h2 Senior Software Engineer
+      header
 
-      #contact
+        #title
 
-        dl
-          dt.email Email
-          dd
-            a href="mailto:paul@sadauskas.com" paul@sadauskas.com
+          h1 Paul Sadauskas
+          h2 Senior Software Engineer
 
-          dt.website Web
-          dd
-            a href="http://resume.sadauskas.com" Sadauskas.com
+        #contact
 
-          dt.phone Phone
-          dd
-            | (408) 372-6364
+          ul
+            li.email
+              i.fa.fa-envelope-o
 
+              .address
+                h1 Email
+                h2
+                  a href="mailto:paul@sadauskas.com" paul@sadauskas.com
 
-    section#summary
+            li.website
+              i.fa.fa-html5
 
-      h1 Passionate about the craft of writing software
+              .address
+                h1 Website
+                h2
+                  a href="http://resume.sadauskas.com" resume.sadauskas.com
 
-      markdown:
-        What motivates me is the opportunity to create well-crafted software that
-        is a joy to use for both my fellow developers as well as our users, and I
-        am most passionate when making tools for developers as the primary users.
-        I am primarily concerned with creating software that is elegant, robust,
-        and reliable.
+            li.github
+              i.fa.fa-github
 
-    section#experience
-
-      h1 Work Experience
-
-      dl
-        dt
-          .company Librato
-          .date Dec 2012 - Present
-        dd
-          .title Engineer
-          p.description
-            markdown:
-              * Architected and implemented a queue system to import
-                AWS Cloudwatch metrics into Librato Metrics on behalf of users
-              * Drove greater adoption of hypermedia concepts in the Librato API
-              * Took charge of a security audit and overhaul of user-facing websites
-                and APIs
-
-        dt
-          .company GitHub
-          .date Jun 2012 - Nov 2012
-        dd
-          .title API Developer
-          p.description
-            markdown:
-              * As a part of the move towards more SOA, I worked in reimplementing
-                existing APIs in the new extracted applications
-              * Made upgrades to various aspects of the GitHub API, and communicated
-                those changes to users
+              .address
+                h1 GitHub
+                h2
+                  a href="https://github.com/paul" github.com/paul
 
 
+      section#summary
+
+        h1 Passionate about the craft of creating software
+
+        markdown:
+          My passion is creating software that is a joy for fellow developers to both use and contribute to.
+          I am motivated to hone my craft of software development, to learn as much as I can about better
+          ways to accomplish complicated tasks, and to build tools that are elegant, robust, and reliable.
+
+
+      #main
+
+        section#experience
+
+          h1 Work Experience
+
+          ol.jobs
+            li.job
+              .position
+                .company Librato
+                .date Dec 2012 - Present
+
+              .description
+                .title Engineer
+                markdown:
+                  * Architected and implemented a queue/worker system to import users' AWS Cloudwatch data
+                  * Drove greater adoption of hypermedia concepts in the Librato API
+                  * Took charge of a security audit and overhaul of user-facing websites and APIs
+
+            li.job
+              .position
+                .company GitHub
+                .date Jun 2012 - Nov 2012
+
+              .description
+                .title API Developer
+                markdown:
+                  * Helped design and implement hypermedia APIs for micro-apps to communicate with the main app
+                  * Made upgrades to various aspects of the GitHub API, and communicated those changes to users
+
+            li.job
+              .position
+                .company LivingSocial
+                .date Nov 2011 - Jun 2012
+
+              .description
+                .title Senior Software Engineer
+                markdown:
+                  * Took part in upgrades and enhancements to the email delivery system
+                  * As a member of the API team, drove adoption of hypermedia APIs as part of a SOA refactor
+                  * Helped refactor a large Rails app by following the principles of TDD and Martin Fowler's *Refactoring*
+
+            li.job
+              .position
+                .company Strobe, Inc
+                .date May 2011 - Oct 2011
+              .description
+                .title Software Engineer
+                markdown:
+                  * Implemented a "ChatOps" continuous deployment system using Campfire
+                  * Created from scratch the Chef cookbooks and recipes to deploy the entire Strobe infrastructure to AWS
+                  * Set up a JenkinsCI cluster for continuous builds of Ruby/Rails, C++ and Clojure applications
+                  * Helped implement a CDN/Caching proxy for customer assets in Clojure
+
+            li.job
+              .position
+                .company Absolute Performance
+                .date 2006 - May 2011
+              .description
+                .title Senior Software Engineer
+                markdown:
+                  * Rewrote an existing monolithic Perl web application into multiple Rails applications
+                  * Architected and developed new applications to interact with the main apps by hypermedia APIs
+                  * Accomplished an order of magnitude improvement in capability by implementation of HTTP caching
+                  * Revamped procedures to ship and deploy applications in various languages to remote customer sites
+                  * Implemented new features in various NoSQL databases, TokyoTyrant, MongoDB, and Redis
+                  * Encouraged the team to adopt automated Unit and Functional testing, as well as agile methods
+                  * Engaged in continuous deployment on non-cloud physical hardware at various customer locations
+                  * Invovled as primary architect of all layers of the stack, from Javascript UIs to database schemas
+
+            li.job
+              .position
+                .company InputOutput Unlimited
+                .date 2002 - 2006
+              .description
+                .title Senior Web Developer
+                markdown:
+                  * On a contract basis, implemented numerous web applications in PHP and later in Rails
+                  * Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements
+
+        section#open-source
+
+          h1 Notable Open Source Projects
+
+          ol.oss
+            li
+              .project
+                a href="https://github.com/paul/resourceful" Resourceful
+              .description
+                markdown:
+                  * Implementation of a fully RFC2616-compliant HTTP client
+                  * Includes support for advanced features of HTTP, including redirects and caching/304 support
+
+            li
+              .project
+                a href="https://github.com/paul/progress_bar" progress_bar
+              .description
+                markdown:
+                  * A very simple implementaion of a CLI progress bar, similar to the output of cURL
+                  * Mentored contributors to keep thier pull requests small, focused, and well-tested
+
+            li
+              .project
+                a href="http://datamapper.org/" DataMapper
+              .description
+                markdown:
+                  * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
+                  * Responded to issues and pull requests, and mentored new developers to get involved
+                  * Redesigned and implemented DataMapper Adapters interface
+                  * Designed and implemented Migrations plugin
+
+            li
+              .project
+                a Merb
+              .description
+                markdown:
+                  * Heavily involved in design and implementation of Merb, preparing for release of 1.0
+                  * Implemented support for conditional GET requests
+                  * Implemented correct handling of HTTP Accept header including client priority
 
 
 
+        section#talks
 
+          h1 Conference Talks
+
+          ol.talks
+
+            li.talk
+              .conf
+                .name Mountain.rb
+                .date Oct 2010
+              .description
+                .title Forms Don't Have to be this Complicated
+                a href="http://confreaks.com/videos/422-mountainrb2010-forms-don-t-have-to-be-this-complicated" http://confreaks.com/videos/422-mountainrb2010-forms-don-t-have-to-be-this-complicated
+
+            li.talk
+              .conf
+                .name MountainWest RubyConf
+                .date Mar 2010
+              .description
+                .title How HTTP Already Solved All Your Performance Problems 10 Years Ago
+                a href="http://confreaks.com/videos/6-mwrc2010-how-http-already-solved-all-your-performance-problems-10-years-ago" http://confreaks.com/videos/6-mwrc2010-how-http-already-solved-all-your-performance-problems-10-years-ago
+
+            li.talk
+              .conf
+                .name MountainWest RubyConf
+                .date Mar 2009
+              .description
+                .title Writing Adapter for DataMapper
+                a href="http://confreaks.com/videos/74-mwrc2009-writing-adapters-for-datamapper" http://confreaks.com/videos/74-mwrc2009-writing-adapters-for-datamapper
+
+
+
+      #sidebar
+
+        section#skills
+
+          h1 Professional Skills
+
+          header
+            ol
+              li average
+              li advanced
+              li expert
+
+          == render_skills :skills
+
+
+        section#tools
+
+          h1 Tools
+
+          header
+            ol
+              li average
+              li advanced
+              li expert
+
+          == render_skills :tools
+
+    #printFooter
+      For the latest version, please visit
+      a href="http://resume.sadauskas.com/" http://resume.sadauskas.com

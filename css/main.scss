@@ -1,6 +1,232 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
+@import "compass/typography/lists/bullets";
+@import "compass/typography/lists/inline-block-list";
+
+$header: #80d6f8;
+$text: #222;
+
+@mixin fancy-header {
+  color: $header;
+  text-transform: uppercase;
+}
+
+@media print {
+  body {
+    //-moz-transform: rotate(-90deg) scale(.50,.50);
+    zoom: 40%;
+    color: #000;
+    a { color: #000 };
+  }
+
+  #printFooter {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen {
+  #printFooter {
+    display: none;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: $text;
+  width: 70em;
+  margin: auto;
 }
+
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 0;
+}
+
+#page {
+  margin: 1em;
+}
+
+header {
+  position: relative;
+
+  #title {
+    width: 70%;
+
+    h1, h2 {
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 4em;
+    }
+
+    h2 {
+      @include fancy-header;
+      font-size: 3em;
+    }
+  }
+
+  #contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 3em;
+
+    ul {
+      @include no-bullets;
+
+      li {
+        margin-bottom: 1em;
+
+        i {
+          font-size: 1.5em;
+          line-height: 2em;
+          float: left;
+          width: 1em;
+        }
+
+        .address {
+          margin-left: 3em;
+        }
+
+        h1 {
+          @include fancy-header;
+          font-size: 1em;
+        }
+
+        h2 {
+          font-size: 1em;
+
+          a {
+            color: $text;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+header, section {
+  margin-bottom: 3em;
+}
+
+#summary {
+  width: 66%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#main {
+  float: left;
+  width: 50em;
+}
+
+#sidebar {
+  width: 18em;
+  margin-left: 52em;
+}
+
+#experience, #talks, #open-source, #skills, #tools {
+  h1 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+
+    &:before {
+      font-family: FontAwesome;
+      color: $header;
+      content: "\f105";
+    }
+  }
+}
+
+ol.jobs, ol.talks, ol.oss {
+  @include no-bullets;
+  padding: 0;
+
+  .position, .conf, .project {
+    float: left;
+    width: 11em;
+  }
+
+  .description {
+    margin-left: 12em;
+    margin-bottom: 1em;
+
+    .title {
+      @include fancy-header;
+    }
+
+    ul {
+      @include no-bullets;
+      margin: 0;
+      padding: 0;
+      font-size: 0.82em;
+    }
+  }
+
+  a {
+    color: $text;
+  }
+}
+
+#skills, #tools {
+  header {
+    margin: 0;
+    font-size: 0.8em;
+
+    ol {
+      @include inline-block-list;
+      margin-left: 30%;
+
+      li {
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.skills {
+  @include no-bullets;
+  padding: 0;
+
+  li {
+    line-height: 2.2em;
+    width: 100%;
+  }
+
+  .name {
+    display: inline-block;
+    width: 6em;
+  }
+
+  .meter {
+    display: inline-block;
+    height: 20px;
+    width: 12em;
+    position: relative;
+
+    & > span {
+      display: inline-block;
+      height: 100%;
+      border: 1px solid $header;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+
+
+}
+
 

@@ -3,9 +3,11 @@
 
 guard :rake, task: :render do
   watch("layout.slim")
+  watch("css/main.scss")
 end
 
 guard 'livereload' do
   watch("index.html")
+  watch("css/main.scss")
 end
 

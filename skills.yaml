@@ -1,0 +1,29 @@
+
+skills:
+  Ruby: 8
+  Rails: 9
+  HTTP: 8
+  HTML/CSS: 7
+  Javascript: 6
+  Coffeescript: 7
+  Go: 2
+  Rust: 1
+  Bash: 5
+  Haskell: 1
+  C: 4
+
+tools:
+  Linux: 7
+  Chef: 8
+  Git: 7
+  Vagrant: 6
+  Docker: 3
+  AWS: 8
+  PostgreSQL: 8
+  MySQL: 6
+  Redis: 5
+  Riak: 4
+  Cassandra: 4
+  Vim: 8
+
+
