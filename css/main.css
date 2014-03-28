@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@media print {
+  /* line 16, ../../css/main.scss */
+  body {
+    zoom: 40%;
+    color: #000;
+  }
+  /* line 20, ../../css/main.scss */
+  body a {
+    color: black;
+  }
+
+  /* line 23, ../../css/main.scss */
+  #printFooter {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen {
+  /* line 31, ../../css/main.scss */
+  #printFooter {
+    display: none;
+  }
+}
+/* line 36, ../../css/main.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #222222;
+  width: 60em;
+  margin: auto;
+}
+
+/* line 44, ../../css/main.scss */
+h1, h2, h3 {
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 49, ../../css/main.scss */
+a {
+  color: #80d6f8;
+}
+
+/* line 53, ../../css/main.scss */
+#page {
+  margin: 1em;
+  position: relative;
+}
+
+/* line 58, ../../css/main.scss */
+#paul-sadauskas {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 4em;
+}
+
+/* line 64, ../../css/main.scss */
+#senior-software-engineer {
+  color: #80d6f8;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+/* line 69, ../../css/main.scss */
+#contact-info {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+/* line 72, ../../css/main.scss */
+#contact-info + ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 3em;
+  list-style: none;
+}
+/* line 11, ../../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+#contact-info + ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 80, ../../css/main.scss */
+#contact-info + ul li {
+  margin-bottom: 0.75em;
+  color: #80d6f8;
+  text-transform: uppercase;
+}
+/* line 84, ../../css/main.scss */
+#contact-info + ul li:before {
+  font-family: FontAwesome;
+  font-size: 1.75em;
+  font-weight: 300;
+  margin: 0 0.5em 0 -1.5em;
+  display: inline-block;
+  width: 1em;
+  position: relative;
+  top: 8px;
+  color: #666;
+}
+/* line 97, ../../css/main.scss */
+#contact-info + ul li:first-child:before {
+  content: "\f003";
+}
+/* line 103, ../../css/main.scss */
+#contact-info + ul li:nth-child(2):before {
+  content: "\f13b";
+}
+/* line 109, ../../css/main.scss */
+#contact-info + ul li:nth-child(3):before {
+  content: "\f09b";
+}
+/* line 116, ../../css/main.scss */
+#contact-info + ul a {
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  text-transform: none;
+}
+/* line 122, ../../css/main.scss */
+#contact-info + ul a:hover {
+  text-decoration: underline;
+}
+
+/* line 130, ../../css/main.scss */
+#passionate-about-the-craft-of-creating-software {
+  display: block;
+  margin: 3em auto 0 auto;
+  width: 80%;
+  text-align: center;
+}
+/* line 136, ../../css/main.scss */
+#passionate-about-the-craft-of-creating-software + p {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* line 148, ../../css/main.scss */
+#professional-experience,
+#notable-open-source-projects,
+#conference-talks,
+#professional-skills-and-tools {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  margin-top: 1em;
+}
+/* line 153, ../../css/main.scss */
+#professional-experience:before,
+#notable-open-source-projects:before,
+#conference-talks:before,
+#professional-skills-and-tools:before {
+  font-family: FontAwesome;
+  color: #80d6f8;
+  content: "\f105";
+}
+/* line 159, ../../css/main.scss */
+#professional-experience + ul,
+#notable-open-source-projects + ul,
+#conference-talks + ul,
+#professional-skills-and-tools + ul {
+  font-size: 1em;
+  text-transform: none;
+  list-style: none;
+  padding: 0;
+}
+/* line 11, ../../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+#professional-experience + ul li,
+#notable-open-source-projects + ul li,
+#conference-talks + ul li,
+#professional-skills-and-tools + ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 165, ../../css/main.scss */
+#professional-experience + ul li > p,
+#notable-open-source-projects + ul li > p,
+#conference-talks + ul li > p,
+#professional-skills-and-tools + ul li > p {
+  width: 100%;
+}
+/* line 168, ../../css/main.scss */
+#professional-experience + ul li > p > em,
+#notable-open-source-projects + ul li > p > em,
+#conference-talks + ul li > p > em,
+#professional-skills-and-tools + ul li > p > em {
+  float: right;
+}
+/* line 172, ../../css/main.scss */
+#professional-experience + ul li > p > mark,
+#notable-open-source-projects + ul li > p > mark,
+#conference-talks + ul li > p > mark,
+#professional-skills-and-tools + ul li > p > mark {
+  background-color: transparent;
+  color: #80d6f8;
+  text-transform: uppercase;
+}
+/* line 176, ../../css/main.scss */
+#professional-experience + ul li > p > mark:after,
+#notable-open-source-projects + ul li > p > mark:after,
+#conference-talks + ul li > p > mark:after,
+#professional-skills-and-tools + ul li > p > mark:after {
+  color: #222222;
+  content: " @";
+}
+/* line 183, ../../css/main.scss */
+#professional-experience + ul li > p > a,
+#notable-open-source-projects + ul li > p > a,
+#conference-talks + ul li > p > a,
+#professional-skills-and-tools + ul li > p > a {
+  color: #222222;
+}
+
+/* line 195, ../../css/main.scss */
+#professional-skills-and-tools + p + ul {
+  list-style: none;
+}
+/* line 11, ../../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+#professional-skills-and-tools + p + ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 201, ../../css/main.scss */
+footer {
+  margin-bottom: 3em;
+}
+/* line 204, ../../css/main.scss */
+footer h1 {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.2em;
+}
+/* line 210, ../../css/main.scss */
+footer ul {
+  list-style-type: none;
+}
+/* line 5, ../../../../../.gem/ruby/2.1.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+footer ul, footer ul li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 213, ../../css/main.scss */
+footer ul li {
+  padding-right: 2em;
+}
