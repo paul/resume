@@ -19,13 +19,15 @@ to build tools that are elegant, robust, and reliable.
    Librato
    *Dec 2012 - Present*
    * Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics
+   * Contributed to and coordinated feature development on the Librato open-source client libraries
    * Drove greater adoption of hypermedia concepts in the Librato API, both external and internal
    * Took charge of a website security audit and fixes to user-facing websites and APIs
+   * Evaluated various JavaScript frameworks to use in a new frontend dashboard
 
  * ==API Developer==
    GitHub
    *Jun 2012 - Nov 2012*
-   * Helped design and implement hypermedia APIs for extracted micro-apps to communicate with the main app and each other
+   * Design and implemented hypermedia APIs for extracted micro-apps to communicate with the main app and each other
    * Made upgrades to various aspects of the GitHub API, and communicated those changes to users
    * Improved tooling for generation of documentation of the GitHub API
 
@@ -104,30 +106,19 @@ Additionally, I have made small code contributions to numerous other OSS project
  * [*Writing Adapters for DataMapper*][talk-datamapper]
    MountainWest RubyConf - Mar 2009
 
-# Professional Skills and Tools
+# Professional Skills
 
-*Ordered by proficiency*
-
- * Rails
+ * Web Application Development
+ * System Administration & Large-scale deployments
+ * Web APIs/services
+ * SOA & Distributed systems
+ * Open Source
  * Ruby
- * HTTP
- * HTML/CSS
- * Coffeescript
- * Postgres
  * Javascript
- * Linux
- * Vagrant
- * Chef
- * AWS
- * Bash/zsh
- * Docker
- * Redis
- * MySQL
- * Riak
- * Go
- * Cassandra
- * Python
- * Clojure
+
+## Buzzwords
+
+REST, HTTP, Ruby, Ruby on Rails, JSON, SOA, HTML, HAML, CSS, SASS, Javascript, Coffeescript, Ember.js, Backbone, Shell scripting, Bash, ZSH, Vim, PostgreSQL, MySQL, SQLite, Redis, Memcached, AWS, EC2, ELB, Apache, NGinx, Chef, agile, Git
 
 
 [email]:           mailto:paul@sadauskas.com
