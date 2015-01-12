@@ -1,5 +1,5 @@
 # Paul Sadauskas
-## Senior Software Engineer
+## Senior Web Application Engineer
 
 # Contact Info
 
@@ -12,6 +12,63 @@
 My passion is creating software that is a joy for fellow developers to both use and contribute to.  I am motivated to
 hone my craft of software development, to learn as much as I can about better ways to accomplish complicated tasks, and
 to build tools that are elegant, robust, and reliable.
+
+# Notable Professional Skills
+
+ * Full-Stack Web Application Development
+ * Ruby & Rails
+ * Web APIs/services, ReST, JSON+LD, Hydra
+ * Service Oriented Architecture & Distributed systems
+ * System Administration & Large-scale deployments, AWS
+ * Javascript, CSS, Ember.js
+ * Open Source Contributor
+ * PostgreSQL and other relational and non-relations DBMSs
+
+# Major Open Source Projects
+
+ * [Resourceful][resourceful]
+   * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
+   * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
+   * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
+
+ * [progress_bar][progress_bar]
+   * A very simple implementation of a CLI progress bar, similar to the output of cURL
+   * Mentored contributors to keep thier pull requests small, focused, and well-tested
+   * It was originally intended primarily for personal use, but is now a dependency of several popular projects
+
+ * [DataMapper][data_mapper]
+   * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
+   * Responded to issues and pull requests, and mentored new developers to get involved
+   * Redesigned and implemented DataMapper Adapters interface
+   * Designed and implemented Migrations plugin
+
+ * Merb
+   * Heavily involved in design and implementation of Merb, preparing for release of 1.0
+   * Implemented support for conditional GET requests (304 response/Etag)
+   * Implemented correct handling of HTTP Accept header including negotiating
+     client and server priorities
+
+ * [Collectd][collectd]
+   * Contributed the tokyo-tyrant collection plugin
+   * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
+
+Additionally, I have made small code contributions to numerous other OSS projects, including Rails, Rack, Awesomewm, and Arch Linux.
+
+# Conference Talks
+
+ * [*Forms Don't Have to be this Complicated*][talk-forms]
+   Mountain.rb - Oct 2010
+
+ * [*How HTTP Already Solved All Your Performance Problems 20 Years Ago*][talk-http]
+   MountainWest RubyConf - Mar 2010
+
+ * [*Writing Adapters for DataMapper*][talk-datamapper]
+   MountainWest RubyConf - Mar 2009
+
+
+## Buzzwords
+
+REST, HTTP, Ruby, Ruby on Rails, JSON, JSON+LD, Hydra, SOA, HTML, HAML, CSS, SASS, Javascript, Coffeescript, Ember.js, Backbone, Shell scripting, Bash, ZSH, Vim, PostgreSQL, MySQL, SQLite, Redis, Memcached, AWS, EC2, SQS, ELB, Apache, NGinx, Chef, agile, Git
 
 # Professional Experience
 
@@ -73,63 +130,9 @@ to build tools that are elegant, robust, and reliable.
    * On a contract basis, implemented numerous web applications in PHP and later in Rails
    * Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements
 
-# Notable Open Source Projects
-
- * [Resourceful][resourceful]
-   * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
-   * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
-   * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
-
- * [progress_bar][progress_bar]
-   * A very simple implementation of a CLI progress bar, similar to the output of cURL
-   * Mentored contributors to keep thier pull requests small, focused, and well-tested
-   * It was originally intended primarily for personal use, but is not a dependency of several popular projects
-
- * [DataMapper][data_mapper]
-   * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
-   * Responded to issues and pull requests, and mentored new developers to get involved
-   * Redesigned and implemented DataMapper Adapters interface
-   * Designed and implemented Migrations plugin
-
- * Merb
-   * Heavily involved in design and implementation of Merb, preparing for release of 1.0
-   * Implemented support for conditional GET requests (304 response/Etag)
-   * Implemented correct handling of HTTP Accept header including negotiating
-     client and server priorities
-
- * [Collectd][collectd]
-   * Contributed the tokyo-tyrant collection plugin
-   * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
-
-Additionally, I have made small code contributions to numerous other OSS projects, including Rails, Rack, Awesomewm, and Arch Linux.
-
-# Conference Talks
-
- * [*Forms Don't Have to be this Complicated*][talk-forms]
-   Mountain.rb - Oct 2010
-
- * [*How HTTP Already Solved All Your Performance Problems 20 Years Ago*][talk-http]
-   MountainWest RubyConf - Mar 2010
-
- * [*Writing Adapters for DataMapper*][talk-datamapper]
-   MountainWest RubyConf - Mar 2009
-
-# Professional Skills
-
- * Web Application Development
- * System Administration & Large-scale deployments
- * Web APIs/services
- * SOA & Distributed systems
- * Open Source
- * Ruby
- * Javascript
-
-## Buzzwords
-
-REST, HTTP, Ruby, Ruby on Rails, JSON, SOA, HTML, HAML, CSS, SASS, Javascript, Coffeescript, Ember.js, Backbone, Shell scripting, Bash, ZSH, Vim, PostgreSQL, MySQL, SQLite, Redis, Memcached, AWS, EC2, ELB, Apache, NGinx, Chef, agile, Git
-
 
 [email]:           mailto:paul@sadauskas.com
+[resume]:          http://resume.sadauskas.com
 [blog]:            http://blog.theamazingrando.com
 [github]:          https://github.com/paul
 [resourceful]:     https://github.com/paul/resourceful
