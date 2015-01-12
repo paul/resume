@@ -64,6 +64,7 @@ a {
 #senior-software-engineer {
   @include fancy-header;
   font-size: 2.5em;
+  margin-top: 0;
 }
 
 #contact-info {
@@ -142,10 +143,7 @@ a {
   }
 }
 
-#professional-experience,
-#notable-open-source-projects,
-#conference-talks,
-#professional-skills-and-tools {
+h2 {
   text-transform: uppercase;
   font-size: 1.6em;
   margin-top: 1em;
@@ -189,7 +187,7 @@ a {
   }
 }
 
-#professional-skills-and-tools {
+#notable-professional-skills {
 
   & + p {
     & + ul {

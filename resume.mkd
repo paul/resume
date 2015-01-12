@@ -13,7 +13,7 @@ My passion is creating software that is a joy for fellow developers to both use 
 hone my craft of software development, to learn as much as I can about better ways to accomplish complicated tasks, and
 to build tools that are elegant, robust, and reliable.
 
-# Notable Professional Skills
+## Notable Professional Skills
 
  * Full-Stack Web Application Development
  * Ruby & Rails
@@ -24,7 +24,7 @@ to build tools that are elegant, robust, and reliable.
  * Open Source Contributor
  * PostgreSQL and other relational and non-relations DBMSs
 
-# Major Open Source Projects
+## Major Open Source Projects
 
  * [Resourceful][resourceful]
    * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
@@ -54,7 +54,7 @@ to build tools that are elegant, robust, and reliable.
 
 Additionally, I have made small code contributions to numerous other OSS projects, including Rails, Rack, Awesomewm, and Arch Linux.
 
-# Conference Talks
+## Conference Talks
 
  * [*Forms Don't Have to be this Complicated*][talk-forms]
    Mountain.rb - Oct 2010
@@ -70,7 +70,7 @@ Additionally, I have made small code contributions to numerous other OSS project
 
 REST, HTTP, Ruby, Ruby on Rails, JSON, JSON+LD, Hydra, SOA, HTML, HAML, CSS, SASS, Javascript, Coffeescript, Ember.js, Backbone, Shell scripting, Bash, ZSH, Vim, PostgreSQL, MySQL, SQLite, Redis, Memcached, AWS, EC2, SQS, ELB, Apache, NGinx, Chef, agile, Git
 
-# Professional Experience
+## Professional Experience
 
  * ==Engineer==
    RainforestQA
