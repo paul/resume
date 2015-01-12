@@ -37,3 +37,10 @@ end
 file "gh-pages/css/main.css" => "css/main.scss" do
   `compass compile css/main.scss`
 end
+
+desc "Publish to resume.sadauskas.com"
+task :publish do
+  FileUtils.cd "gh-pages" do
+    `git commit -am "Re-render" && git push`
+  end
+end
