@@ -16,8 +16,16 @@ to build tools that are elegant, robust, and reliable.
 # Professional Experience
 
  * ==Engineer==
+   RainforestQA
+   *Aug 2014 - Present*
+   * Wrote a full-stack Rails application (Postgres, Ruby, CSS, JS) to provide testers with a one-time use email address
+   * Added features to the open-source QueueClassic and QueueClassicAdmin gems
+   * Troubleshooted performance issues relating to load from a "stampeding herd" effect from testers
+   * Prototyped a replacement for a core component of the UI in Ember.js
+
+ * ==Engineer==
    Librato
-   *Dec 2012 - Present*
+   *Dec 2012 - Aug 2014*
    * Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics
    * Contributed to and coordinated feature development on the Librato open-source client libraries
    * Drove greater adoption of hypermedia concepts in the Librato API, both external and internal
