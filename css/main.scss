@@ -134,7 +134,7 @@ a {
   width: 80%;
   text-align: center;
 
-  & + p {
+  & ~ p {
     width: 66%;
     margin-left: auto;
     margin-right: auto;
