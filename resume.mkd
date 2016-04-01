@@ -16,13 +16,13 @@ to build tools that are elegant, robust, and reliable.
 ## Notable Professional Skills
 
  * Full-Stack Web Application Development
- * Ruby & Rails
+ * Ruby & Rails, Go, Rust
  * Web APIs/services, ReST, JSON+LD, Hydra
  * Service Oriented Architecture & Distributed systems
- * System Administration & Large-scale deployments, AWS
- * Javascript, CSS, Ember.js
- * Open Source Contributor
- * PostgreSQL and other relational and non-relations DBMSs
+ * System Administration & Large-scale deployments, AWS, Heroku, Docker
+ * Javascript & ES2016, CSS & SASS, Ember.js, React, Flux, Elm
+ * Open Source Contributor & Maintainer
+ * PostgreSQL, Elasticsearch, CouchDB, Riak and other relational and non-relational databases.
 
 ## Major Open Source Projects
 
@@ -72,15 +72,21 @@ REST, HTTP, Ruby, Ruby on Rails, JSON, JSON+LD, Hydra, SOA, HTML, HAML, CSS, SAS
 
 ## Professional Experience
 
- * ==Engineer==
+ * ==Senior Engineer==
+   Kapost
+   *Feb 2015 - Present*
+   * Architected and implemented an application to collect and present analytics data. Utilized CouchDB for analytics storage and aggregation, and SQS for background workers.
+
+
+ * ==Senior Engineer==
    RainforestQA
-   *Aug 2014 - Present*
+   *Aug 2014 - Feb 2015*
    * Wrote a full-stack Rails application (Postgres, Ruby, CSS, JS) to provide testers with a one-time use email address
    * Added features to the open-source QueueClassic and QueueClassicAdmin gems
    * Troubleshooted performance issues relating to load from a "stampeding herd" effect from testers
    * Prototyped a replacement for a core component of the UI in Ember.js
 
- * ==Engineer==
+ * ==Senior Engineer==
    Librato
    *Dec 2012 - Aug 2014*
    * Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics
