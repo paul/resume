@@ -57,8 +57,8 @@ file "cv-pages/css/main.css" => "css/main.scss" do
 end
 
 desc "Publish to resume.sadauskas.com"
-task :publish_cv do
-  FileUtils.cd "cv-pages" do
+task :publish do
+  FileUtils.cd "gh-pages" do
     `git commit -am "Re-render" && git push`
   end
 end
