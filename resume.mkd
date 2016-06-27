@@ -26,29 +26,29 @@ to build tools that are elegant, robust, and reliable.
 
 ## Major Open Source Projects
 
- * [Resourceful][resourceful]
+ * [Resourceful][resourceful] *Co-Creator*
    * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
    * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
    * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
 
- * [progress_bar][progress_bar]
+ * [progress_bar][progress_bar] *Creator*
    * A very simple implementation of a CLI progress bar, similar to the output of cURL
-   * Mentored contributors to keep thier pull requests small, focused, and well-tested
+   * Mentored contributors to keep their pull requests small, focused, and well-tested
    * It was originally intended primarily for personal use, but is now a dependency of several popular projects
 
- * [DataMapper][data_mapper]
+ * [DataMapper][data_mapper] *Core Team*
    * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
    * Responded to issues and pull requests, and mentored new developers to get involved
    * Redesigned and implemented DataMapper Adapters interface
    * Designed and implemented Migrations plugin
 
- * Merb
+ * Merb *Contributor*
    * Heavily involved in design and implementation of Merb, preparing for release of 1.0
    * Implemented support for conditional GET requests (304 response/Etag)
    * Implemented correct handling of HTTP Accept header including negotiating
      client and server priorities
 
- * [Collectd][collectd]
+ * [Collectd][collectd] *Contributor*
    * Contributed the tokyo-tyrant collection plugin
    * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
 
@@ -66,16 +66,12 @@ Additionally, I have made small code contributions to numerous other OSS project
    MountainWest RubyConf - Mar 2009
 
 
-## Buzzwords
-
-REST, HTTP, Ruby, Ruby on Rails, JSON, JSON+LD, Hydra, SOA, HTML, HAML, CSS, SASS, Javascript, Coffeescript, Ember.js, Backbone, Shell scripting, Bash, ZSH, Vim, PostgreSQL, MySQL, SQLite, Redis, Memcached, AWS, EC2, SQS, ELB, Apache, NGinx, Chef, agile, Git
-
 ## Professional Experience
 
  * ==Senior Engineer==
    Kapost
    *Feb 2015 - Present*
-   * Architected and implemented an application to collect and present analytics data. Utilized CouchDB for analytics storage and aggregation, and SQS for background workers.
+   * Architected and implemented an application to collect and present analytics data. Utilized CouchDB and eventually Elasticsearch for analytics storage and aggregation, and SQS for background workers.
 
 
  * ==Senior Engineer==
