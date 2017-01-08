@@ -158,32 +158,43 @@ h2 + ul {
   font-size: 1em;
   text-transform: none;
   padding: 0;
+  list-style: none;
 }
-/* line 162, ../../css/main.scss */
+/* line 11, ../../../../../.gem/ruby/2.3.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+h2 + ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 167, ../../css/main.scss */
+h2 + ul li > ul > li {
+  list-style-type: square;
+}
+/* line 173, ../../css/main.scss */
 h2 + ul li > p {
   width: 100%;
 }
-/* line 165, ../../css/main.scss */
+/* line 176, ../../css/main.scss */
 h2 + ul li > p > em {
   float: right;
 }
-/* line 169, ../../css/main.scss */
+/* line 180, ../../css/main.scss */
 h2 + ul li > p > mark {
   background-color: transparent;
   color: #80d6f8;
   text-transform: uppercase;
 }
-/* line 173, ../../css/main.scss */
+/* line 184, ../../css/main.scss */
 h2 + ul li > p > mark:after {
   color: #222222;
   content: " @";
 }
-/* line 180, ../../css/main.scss */
+/* line 191, ../../css/main.scss */
 h2 + ul li > p > a {
   color: #222222;
 }
 
-/* line 192, ../../css/main.scss */
+/* line 203, ../../css/main.scss */
 #notable-professional-skills + p + ul {
   list-style: none;
 }
@@ -194,17 +205,17 @@ h2 + ul li > p > a {
   margin-left: 0;
 }
 
-/* line 198, ../../css/main.scss */
+/* line 209, ../../css/main.scss */
 footer {
   margin-bottom: 3em;
 }
-/* line 201, ../../css/main.scss */
+/* line 212, ../../css/main.scss */
 footer h1 {
   text-transform: uppercase;
   margin: 0;
   font-size: 1.2em;
 }
-/* line 207, ../../css/main.scss */
+/* line 218, ../../css/main.scss */
 footer ul {
   list-style-type: none;
 }
@@ -214,7 +225,7 @@ footer ul, footer ul li {
   padding: 0px;
   display: inline;
 }
-/* line 210, ../../css/main.scss */
+/* line 221, ../../css/main.scss */
 footer ul li {
   padding-right: 2em;
 }
