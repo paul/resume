@@ -16,13 +16,16 @@ to build tools that are elegant, robust, and reliable.
 ## Notable Professional Skills
 
  * Full-Stack Web Application Development
- * Ruby & Rails, Go, Rust
+ * Expert in Ruby & Rails
+ * Strong background in Unix/Linux DevOps
  * Web APIs/services, ReST, JSON+LD, Hydra
  * Service Oriented Architecture & Distributed systems
  * System Administration & Large-scale deployments, AWS, Heroku, Docker
- * Javascript & ES2016, CSS & SASS, Ember.js, React, Flux, Elm
+ * Javascript & ES2016, CSS & SASS, Elm, Ember.js, React & Flux
+ * Familiarity with Rust, Go, Haskell, Clojure
  * Open Source Contributor & Maintainer
- * PostgreSQL, Elasticsearch, CouchDB, Riak and other relational and non-relational databases.
+ * PostgreSQL, Elasticsearch, CouchDB, Riak, MongoDB and other relational and non-relational databases.
+ * Proficient at Bash scripting and Unix CLI tooling
 
 ## Major Open Source Projects
 
