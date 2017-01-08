@@ -157,8 +157,18 @@ h2 {
   & + ul {
     font-size: 1em;
     text-transform: none;
-    @include no-bullets;
     padding: 0;
+
+    @include no-bullets;
+
+    li > ul {
+      // list-style-type: disc;
+
+      & > li {
+      list-style-type: square;
+
+      }
+    }
 
     li > p {
       width: 100%;
