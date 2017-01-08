@@ -58,12 +58,22 @@ Additionally, I have made small code contributions to numerous other OSS project
 
  * [*Forms Don't Have to be this Complicated*][talk-forms]
    Mountain.rb - Oct 2010
+   In this talk, I lament how difficult it is to build complicated nested form
+   in Rails & UJS. I offer a few solutions, including Form Objects. More
+   recently, pure front-end apps in React or Ember have supplanted the need for
+   a comprehensive solution in Rails itself.
 
  * [*How HTTP Already Solved All Your Performance Problems 20 Years Ago*][talk-http]
    MountainWest RubyConf - Mar 2010
+   I describe several of the more powerful features provided by the HTTP
+   protocol, which are supported by most basic HTTP clients in languages'
+   stdlib, but not taken advantage of by most advanced client libraries.
 
  * [*Writing Adapters for DataMapper*][talk-datamapper]
    MountainWest RubyConf - Mar 2009
+   As a member of the core team, I gave a tutorial on how to write custom
+   adapters for the DataMapper ORM. Several adapters for other databases and
+   web services were contributed as a result of this talk.
 
 
 ## Professional Experience
@@ -71,8 +81,17 @@ Additionally, I have made small code contributions to numerous other OSS project
  * ==Senior Engineer==
    Kapost
    *Feb 2015 - Present*
-   * Architected and implemented an application to collect and present analytics data. Utilized CouchDB and eventually Elasticsearch for analytics storage and aggregation, and SQS for background workers.
-
+   * Architected and implemented an application to collect and present
+     analytics data. Utilized CouchDB and eventually Elasticsearch for
+     analytics storage and aggregation, and SQS for background workers.
+   * Transitioned to a DevOps role, assisting other teams in building out
+     multiple apps in a microservices architecture.
+   * Built scripts and configs to create a Docker-based development environment
+     to simplify developing against other teams' apps.
+   * Collaborated with teams to develop their features and products in a way
+     that integrated well with existing projects.
+   * Built Chat-Ops bots to allow team members to inquire about the state of
+     the system, and deploy & provision ad-hoc staging environments.
 
  * ==Senior Engineer==
    RainforestQA
