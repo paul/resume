@@ -1,5 +1,5 @@
 # Paul Sadauskas
-## Senior Web Application Engineer
+## Senior Web Application Architect
 
 # Contact Info
 
@@ -21,7 +21,7 @@ to build tools that are elegant, robust, and reliable.
  * Web APIs/services, ReST, JSON+LD, Hydra
  * Service Oriented Architecture & Distributed systems
  * System Administration & Large-scale deployments, AWS, Heroku, Docker
- * Javascript & ES2016, CSS & SASS, Elm, Ember.js, React & Flux
+ * Javascript/ES6+, CSS & SASS, Elm, Ember.js, React & Flux
  * Familiarity with Rust, Go, Haskell, Clojure
  * Open Source Contributor & Maintainer
  * PostgreSQL, Elasticsearch, CouchDB, Riak, MongoDB and other relational and non-relational databases.
@@ -81,9 +81,35 @@ Additionally, I have made small code contributions to numerous other OSS project
 
 ## Professional Experience
 
+ * ==Lead Software Architect==
+   TextUs
+   *Apr 2017 - Present*
+   * Drastically increased reliability and performance of existing MVP
+     application by leveraging RDBMS best practices and background queues.
+   * Led development and architecture of greenfield rewrite of the application,
+     once it became clear the MVP in place was insufficient for our new larger
+     customer profile.
+     * Designed and built infrastructure to deliver and receive 150MM SMS
+       messages a year across multiple providers with 100% reliability.
+     * Designed and built Hydra-based API for consumption by our Web UI, Mobile
+       apps and Chrome extension, as well as 3rd-party integrators. Worked
+       closely in conjuction with Frontend engineers to develop an API that
+       balanced request count with payload size. Championed use of Hypermedia
+       for the team to recognize the benefits.
+     * Designed and built integration system for the reliable delivery of
+       webhooks in the presence of unreliable customer and partner services.
+   * Built infrastructure for deployment, instrumentation and alerting using
+     Heroku, Terraform, InfluxDB and Grafana.
+   * Partnered with CTO to scope product objectives, define features and manage
+     the engineering team.
+   * Grew engineering team from 4 to 10 consisting of a diverse group of people.
+   * Championed and supported Agile methodologies for the team, leading
+     standups and retros. Strong advocate of introspection and continuous
+     improvement of every aspect of building software and teams.
+
  * ==Senior Engineer==
    Kapost
-   *Feb 2015 - Present*
+   *Feb 2015 - Mar 2017*
    * Architected and implemented an application to collect and present
      analytics data. Utilized CouchDB and eventually Elasticsearch for
      analytics storage and aggregation, and SQS for background workers.
@@ -154,10 +180,17 @@ Additionally, I have made small code contributions to numerous other OSS project
    * On a contract basis, implemented numerous web applications in PHP and later in Rails
    * Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements
 
+## Tech I'd Love Someone to Pay Me to Learn More About
+
+ * Elm
+ * Rust
+ * Crystal
+ * Reverse Engineering
+ * Hardware Development
 
 [email]:           mailto:paul@sadauskas.com
-[resume]:          http://resume.sadauskas.com
-[blog]:            http://blog.theamazingrando.com
+[resume]:          https://resume.sadauskas.com
+[blog]:            https://blog.theamazingrando.com
 [github]:          https://github.com/paul
 [resourceful]:     https://github.com/paul/resourceful
 [progress_bar]:    https://github.com/paul/progress_bar
