@@ -78,7 +78,7 @@ a {
   padding-right: 3em;
   list-style: none;
 }
-/* line 11, ../../../../../.gem/ruby/2.3.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../../.gem/ruby/2.7.2/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 #contact-info + ul li {
   list-style-image: none;
   list-style-type: none;
@@ -160,7 +160,7 @@ h2 + ul {
   padding: 0;
   list-style: none;
 }
-/* line 11, ../../../../../.gem/ruby/2.3.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../../.gem/ruby/2.7.2/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 h2 + ul li {
   list-style-image: none;
   list-style-type: none;
@@ -198,7 +198,7 @@ h2 + ul li > p > a {
 #notable-professional-skills + p + ul {
   list-style: none;
 }
-/* line 11, ../../../../../.gem/ruby/2.3.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../../.gem/ruby/2.7.2/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 #notable-professional-skills + p + ul li {
   list-style-image: none;
   list-style-type: none;
@@ -219,7 +219,7 @@ footer h1 {
 footer ul {
   list-style-type: none;
 }
-/* line 5, ../../../../../.gem/ruby/2.3.1/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+/* line 5, ../../../../../.gem/ruby/2.7.2/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
 footer ul, footer ul li {
   margin: 0px;
   padding: 0px;
