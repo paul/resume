@@ -1,7 +1,8 @@
-require 'slim'
-require 'tilt'
-require 'redcarpet'
+# frozen_string_literal: true
 
+require "slim"
+require "tilt"
+require "redcarpet"
 
 mkd_renderer_opts = {
   with_toc_data: true
@@ -17,17 +18,17 @@ mkd_extensions = {
 Slim::Engine.set_default_options pretty: true
 Slim::Embedded.set_default_options markdown: mkd_extensions
 
-Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, 'markdown', 'mkd', 'md'
-Tilt.prefer Tilt::RedcarpetTemplate::Redcarpet2, 'markdown'
+Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, "markdown", "mkd", "md"
+Tilt.prefer Tilt::RedcarpetTemplate::Redcarpet2, "markdown"
 
 desc "Render the page"
-task :render => ["gh-pages/index.html", 'gh-pages/css/main.css']
+task render: ["gh-pages/index.html", "gh-pages/css/main.css"]
 
 desc "Render the CV"
-task :render_cv => ["cv-pages/index.html", 'cv-pages/css/main.css']
+task render_cv: ["cv-pages/index.html", "cv-pages/css/main.css"]
 
 file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
-  layout = Tilt.new('layout.slim')
+  layout = Tilt.new("layout.slim")
   # template = Tilt.new('resume.mkd')
   # Tilt won't let me pass the right options to redcarpet
   mkd = Redcarpet::Markdown.new(mkd_renderer, mkd_extensions)
@@ -38,7 +39,7 @@ file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
 end
 
 file "cv-pages/index.html" => ["cv.mkd", "layout.slim", __FILE__] do
-  layout = Tilt.new('layout.slim')
+  layout = Tilt.new("layout.slim")
   # template = Tilt.new('resume.mkd')
   # Tilt won't let me pass the right options to redcarpet
   mkd = Redcarpet::Markdown.new(mkd_renderer, mkd_extensions)

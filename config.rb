@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
@@ -15,7 +17,6 @@ javascripts_dir = "js"
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
-
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
