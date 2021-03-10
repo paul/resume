@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "slim"
-require "tilt"
 require "redcarpet"
 
 mkd_renderer_opts = {
@@ -17,9 +16,6 @@ mkd_extensions = {
 
 Slim::Engine.set_default_options pretty: true
 Slim::Embedded.set_default_options markdown: mkd_extensions
-
-Tilt.register Tilt::RedcarpetTemplate::Redcarpet2, "markdown", "mkd", "md"
-Tilt.prefer Tilt::RedcarpetTemplate::Redcarpet2, "markdown"
 
 desc "Render the page"
 task render: ["gh-pages/index.html", "gh-pages/css/main.css"]
