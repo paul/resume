@@ -44,19 +44,24 @@ a {
 }
 
 /* line 53, ../../css/main.scss */
+p {
+  line-height: 1.5;
+}
+
+/* line 57, ../../css/main.scss */
 #page {
   margin: 1em;
   position: relative;
 }
 
-/* line 58, ../../css/main.scss */
+/* line 62, ../../css/main.scss */
 #paul-sadauskas {
   text-transform: uppercase;
   margin: 0;
   font-size: 4em;
 }
 
-/* line 64, ../../css/main.scss */
+/* line 68, ../../css/main.scss */
 #senior-web-application-engineer {
   color: #80d6f8;
   text-transform: uppercase;
@@ -64,13 +69,13 @@ a {
   margin-top: 0;
 }
 
-/* line 70, ../../css/main.scss */
+/* line 74, ../../css/main.scss */
 #contact-info {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
 }
-/* line 73, ../../css/main.scss */
+/* line 77, ../../css/main.scss */
 #contact-info + ul {
   position: absolute;
   top: 0;
@@ -84,13 +89,13 @@ a {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 81, ../../css/main.scss */
+/* line 85, ../../css/main.scss */
 #contact-info + ul li {
   margin-bottom: 0.75em;
   color: #80d6f8;
   text-transform: uppercase;
 }
-/* line 85, ../../css/main.scss */
+/* line 89, ../../css/main.scss */
 #contact-info + ul li:before {
   font-family: FontAwesome;
   font-size: 1.75em;
@@ -102,58 +107,58 @@ a {
   top: 8px;
   color: #666;
 }
-/* line 98, ../../css/main.scss */
+/* line 102, ../../css/main.scss */
 #contact-info + ul li:first-child:before {
   content: "\f003";
 }
-/* line 104, ../../css/main.scss */
+/* line 108, ../../css/main.scss */
 #contact-info + ul li:nth-child(2):before {
   content: "\f13b";
 }
-/* line 110, ../../css/main.scss */
+/* line 114, ../../css/main.scss */
 #contact-info + ul li:nth-child(3):before {
   content: "\f09b";
 }
-/* line 117, ../../css/main.scss */
+/* line 121, ../../css/main.scss */
 #contact-info + ul a {
   display: block;
   color: #222222;
   text-decoration: none;
   text-transform: none;
 }
-/* line 123, ../../css/main.scss */
+/* line 127, ../../css/main.scss */
 #contact-info + ul a:hover {
   text-decoration: underline;
 }
 
-/* line 131, ../../css/main.scss */
+/* line 134, ../../css/main.scss */
 #passionate-about-the-craft-of-creating-software {
   display: block;
   margin: 3em auto 0 auto;
   width: 80%;
   text-align: center;
 }
-/* line 137, ../../css/main.scss */
+/* line 140, ../../css/main.scss */
 #passionate-about-the-craft-of-creating-software ~ p {
-  width: 66%;
+  width: 80ex;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 146, ../../css/main.scss */
+/* line 148, ../../css/main.scss */
 h2 {
   text-transform: uppercase;
   font-size: 1.6em;
   margin-top: 1em;
 }
-/* line 151, ../../css/main.scss */
+/* line 153, ../../css/main.scss */
 h2:before {
   font-family: FontAwesome;
   color: #80d6f8;
   content: "\f105";
 }
-/* line 157, ../../css/main.scss */
+/* line 159, ../../css/main.scss */
 h2 + ul {
   font-size: 1em;
   text-transform: none;
@@ -166,35 +171,35 @@ h2 + ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 167, ../../css/main.scss */
+/* line 169, ../../css/main.scss */
 h2 + ul li > ul > li {
   list-style-type: square;
 }
-/* line 173, ../../css/main.scss */
+/* line 175, ../../css/main.scss */
 h2 + ul li > p {
   width: 100%;
 }
-/* line 176, ../../css/main.scss */
+/* line 178, ../../css/main.scss */
 h2 + ul li > p > em {
   float: right;
 }
-/* line 180, ../../css/main.scss */
+/* line 182, ../../css/main.scss */
 h2 + ul li > p > mark {
   background-color: transparent;
   color: #80d6f8;
   text-transform: uppercase;
 }
-/* line 184, ../../css/main.scss */
+/* line 186, ../../css/main.scss */
 h2 + ul li > p > mark:after {
   color: #222222;
   content: " @";
 }
-/* line 191, ../../css/main.scss */
+/* line 193, ../../css/main.scss */
 h2 + ul li > p > a {
   color: #222222;
 }
 
-/* line 203, ../../css/main.scss */
+/* line 205, ../../css/main.scss */
 #notable-professional-skills + p + ul {
   list-style: none;
 }
@@ -205,17 +210,17 @@ h2 + ul li > p > a {
   margin-left: 0;
 }
 
-/* line 209, ../../css/main.scss */
+/* line 211, ../../css/main.scss */
 footer {
   margin-bottom: 3em;
 }
-/* line 212, ../../css/main.scss */
+/* line 214, ../../css/main.scss */
 footer h1 {
   text-transform: uppercase;
   margin: 0;
   font-size: 1.2em;
 }
-/* line 218, ../../css/main.scss */
+/* line 220, ../../css/main.scss */
 footer ul {
   list-style-type: none;
 }
@@ -225,7 +230,7 @@ footer ul, footer ul li {
   padding: 0px;
   display: inline;
 }
-/* line 221, ../../css/main.scss */
+/* line 223, ../../css/main.scss */
 footer ul li {
   padding-right: 2em;
 }
