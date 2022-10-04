@@ -12,6 +12,6 @@ gem "guard-rake"
 gem "redcarpet"
 gem "slim"
 
-gem "compass"
+gem "sassc"
 
 gem "heel"

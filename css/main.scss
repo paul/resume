@@ -1,11 +1,43 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-@import "compass/typography/lists/bullets";
-@import "compass/typography/lists/inline-list";
-@import "compass/typography/text/replacement";
+@import "./fontawesome/fontawesome.scss";
 
-$header: #80d6f8;
-$text: #222;
+// Mixins from compass
+
+// Hides text in an element by squishing the text into oblivion.
+// Use this if you need to hide text contained in an inline element
+// but still have it read by a screen reader.
+@mixin squish-text {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+// Turn off the bullet for an element of a list
+@mixin no-bullet {
+  list-style-image : none;
+  list-style-type  : none;
+  margin-left      : 0;
+}
+
+// turns off the bullets for an entire list
+@mixin no-bullets {
+  list-style: none;
+  li { @include no-bullet; }
+}
+
+// makes a list inline.
+@mixin inline-list {
+  list-style-type: none;
+  &, & li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}
+
+$header: #2c6d45;
+$text: #111;
 
 @mixin fancy-header {
   color: $header;
@@ -15,7 +47,7 @@ $text: #222;
 @media print {
   body {
     //-moz-transform: rotate(-90deg) scale(.50,.50);
-    zoom: 40%;
+    zoom: 60%;
     color: #000;
     a { color: #000 };
   }
@@ -39,6 +71,8 @@ body {
   color: $text;
   width: 60em;
   margin: auto;
+  font-size: 16px;
+  // line-height: 24px;
 }
 
 h1, h2, h3 {
@@ -51,7 +85,19 @@ a {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 24px;
+}
+
+li {
+  list-style-type: square;
+}
+
+blockquote {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 20px;
+  padding-left: 16px;
+  border-left: 4px solid #666;
 }
 
 #page {
@@ -134,60 +180,32 @@ p {
 #passionate-about-the-craft-of-creating-software {
   display: block;
   margin: 3em auto 0 auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
-
-  & ~ p {
-    width: 80ex;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
 }
 
 h2 {
   text-transform: uppercase;
   font-size: 1.6em;
   margin-top: 1em;
+  margin-bottom: 1em;
 
   &:before {
     font-family: FontAwesome;
     color: $header;
     content: "\f105";
+    padding-right: 0.5ex;
   }
 
   & + ul {
     font-size: 1em;
     text-transform: none;
-    padding: 0;
-
-    @include no-bullets;
-
-    li > ul {
-      // list-style-type: disc;
-
-      & > li {
-      list-style-type: square;
-
-      }
-    }
 
     li > p {
       width: 100%;
 
       & > em { // dates
         float: right;
-      }
-
-      & > mark { // job title
-        background-color: transparent;
-        @include fancy-header;
-
-        &:after {
-          color: $text;
-          content: " @";
-        }
-
       }
 
       & > a {
@@ -199,12 +217,20 @@ h2 {
   }
 }
 
-#notable-professional-skills {
+h3 {
+  & > mark { // job title
+    background-color: transparent;
+    @include fancy-header;
 
-  & + p {
-    & + ul {
-      @include no-bullets;
+    &:after {
+      color: $text;
+      content: " @";
     }
+
+  }
+
+  & > em {
+    float: right;
   }
 }
 
