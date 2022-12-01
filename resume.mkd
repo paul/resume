@@ -27,10 +27,10 @@ and leading a team of fellow developers and mentoring junior engineers.
  * Web APIs/services, ReST & Hypermedia, JSON+LD, Hydra
  * Service Oriented Architecture & Distributed systems
  * System Administration & Large-scale deployments, AWS, Heroku, Docker
- * Javascript/ES6+, CSS & SASS, Elm, Ember.js, React
- * Familiarity with Rust, Go, Python, C, C++, Crystal
+ * Javascript/ES6+/Typescript, CSS & SASS, Elm, Ember.js, React
+ * Familiarity with Elixir, Rust, Go, Python, C, Crystal
  * Open Source Contributor & Maintainer
- * PostgreSQL, Elasticsearch, CouchDB, Riak, MongoDB and other relational and non-relational databases
+ * PostgreSQL, Elasticsearch, CouchDB, DynamoDB, Riak, MongoDB and other relational and non-relational databases
  * Proficient at Bash scripting and Unix CLI tooling
  * Writing documentation, mentoring, pair-programming; soft skills we use to hone our craft collaboratively
  * Agile methodologies, Scrum
