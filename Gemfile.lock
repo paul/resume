@@ -1,7 +1,8 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.3.6)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     coderay (1.1.1)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
@@ -45,11 +46,11 @@ GEM
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pdfkit (0.8.7)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (5.0.0)
     puma (2.8.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
@@ -78,7 +79,6 @@ DEPENDENCIES
   guard-livereload
   guard-rake
   heel
-  pdfkit (~> 0.8.7)
   rake
   redcarpet
   sassc
