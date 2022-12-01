@@ -45,7 +45,6 @@ GEM
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pdfkit (0.8.7)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -53,7 +52,7 @@ GEM
     puma (2.8.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
-    rake (11.2.2)
+    rake (12.3.3)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -78,7 +77,6 @@ DEPENDENCIES
   guard-livereload
   guard-rake
   heel
-  pdfkit (~> 0.8.7)
   rake
   redcarpet
   sassc
