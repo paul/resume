@@ -7,7 +7,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
     eventmachine (1.2.0.1)
-    ffi (1.9.10)
+    ffi (1.15.5)
     formatador (0.2.5)
     guard (2.14.0)
       formatador (>= 0.2.4)
@@ -45,7 +45,6 @@ GEM
     notiffany (0.1.0)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pdfkit (0.8.7)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -78,7 +77,6 @@ DEPENDENCIES
   guard-livereload
   guard-rake
   heel
-  pdfkit (~> 0.8.7)
   rake
   redcarpet
   sassc
