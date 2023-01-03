@@ -15,3 +15,8 @@ gem "slim"
 gem "sassc"
 
 gem "heel"
+
+gem "rack"
+gem "puma"
+gem "rack-livereload"
+

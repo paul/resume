@@ -14,8 +14,8 @@ mkd_extensions = {
   highlight: true
 }
 
-Slim::Engine.set_default_options pretty: true
-Slim::Embedded.set_default_options markdown: mkd_extensions
+Slim::Engine.set_options pretty: true
+Slim::Embedded.set_options markdown: mkd_extensions
 
 desc "Render the page"
 task render: ["gh-pages/index.html", "gh-pages/css/main.css", "gh-pages/Resume of Paul Sadauskas.pdf"]
