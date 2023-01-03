@@ -39,56 +39,61 @@ and leading a team of fellow developers and mentoring junior engineers.
 
 ### Employment: ==Lead Software Architect== TextUs *Apr 2017 - Dec 2022*
 
-* Joined as 3rd engineer on a team that had an MVP Rails application. 
-  * Drastically improved reliability of message delivery by incorporating AWS
-    technologies API Gateway, SNS & SQS, and created Terraform tooling to
-    ensure consistency between Staging and Production.
-  * Also improved performance and scalability of message delivery to
-    accommodate customer usage.
-  * "Rescued" the existing test suite, improving runtime and reducing failure
-    rate.
-  * Implemented best-practices for monitoring and instrumentation, using
-    InfluxDB and Grafana, with Honeybadger for error notifications. Later
-    incorporated Honeycomb for tracing.
-* Once it became clear the existing application could not handle the scale we
-  wished to achieve with our new enterprise customers, I spearheaded a
-  greenfield re-write of a replacement Rails application.
-  * New app scaled from 1M Messages/day to over 50 Million, and 40,000 daily
-    active users.
-  * Expanded use of SQS for job queues to improve application reliability and
-    scalability.
-  * Implemented PostgreSQL best-practices: foreign key constraints, custom
-    domains, materialized views. Optimized queries, index usage, and stamping
-    down N+1s.
-  * Designed and built Hydra-based API for consumption by our Web UI, Mobile
-    apps and Chrome extension, as well as 3rd-party integrators. Worked closely
-    in conjunction with frontend engineers to develop an API that balanced
-    request count with payload size. Championed use of Hypermedia for the team
-    which delivered many positive benefits.
-  * Designed and built integration system for the reliable delivery of Webhooks
-    and 3rd-party API calls in the presence of unreliable customer and partner
-    services.
-  * Involved in design and implementation of every other major feature and
-    component.
-  * Built infrastructure for deployment, instrumentation and alerting using
-    Heroku, Terraform, InfluxDB, Grafana and Honeycomb.
-* In addition to the technical work, I also performed duties as Team Lead and Acting CTO.
-  * Grew engineering team from 4 to 20 consisting of a diverse group of
-    people. Streamlined onboarding, performed 1on1s with the team.
-  * I strongly believe in hiring junior engineers and continuing their
-    education. About 1/3 of our engineers were recent graduates of boot camps,
-    often as their first engineering job. Closely mentoring and providing a
-    supportive environment is a key part of this process.
-  * Created the technical interview process, which hired many key engineers. I
-    performed most of the early interviews, then trained the team to also be
-    able to conduct interviews.
-  * Defined features, scoped product objectives, and collaborated with
-    stakeholders to build a company roadmap.
-  * Instilled a culture of positivity and supportiveness, so the team felt
-    comfortable experimenting and learning from each other.
-  * Championed and supported Agile methodologies for the team, leading
-    standups and retros. Strong advocate of introspection and continuous
-    improvement of every aspect of building software and teams.
+Joined as 3rd engineer on a team that had an existing MVP Rails application. 
+
+ * Drastically improved reliability of message delivery by incorporating AWS
+   technologies API Gateway, SNS & SQS, and created Terraform tooling to
+   ensure consistency between Staging and Production.
+ * Also improved performance and scalability of message delivery to
+   accommodate customer usage.
+ * "Rescued" the existing test suite, improving runtime and reducing failure
+   rate.
+ * Implemented best-practices for monitoring and instrumentation, using
+   InfluxDB and Grafana, with Honeybadger for error notifications.
+
+Once it became clear the existing application could not handle the scale we
+wished to achieve with our new enterprise customers, I spearheaded a greenfield
+re-write of a replacement Rails application.
+
+ * New app scaled from 1M Messages/day to over 50 Million, and 40,000 daily
+   active users.
+ * Expanded use of SQS for job queues to improve application reliability and
+   scalability.
+ * Implemented PostgreSQL best-practices: foreign key constraints, custom
+   domains, materialized views. Optimized queries, index usage, and stamping
+   down N+1s.
+ * Designed and built Hydra-based API for consumption by our Web UI, Mobile
+   apps and Chrome extension, as well as 3rd-party integrators. Worked closely
+   in conjunction with frontend engineers to develop an API that balanced
+   request count with payload size. Championed use of Hypermedia for the team
+   which delivered many positive benefits.
+ * Designed and built integration system for the reliable delivery of Webhooks
+   and 3rd-party API calls in the presence of unreliable customer and partner
+   services.
+ * Involved in design and implementation of every other major feature and
+   component.
+ * Built infrastructure for deployment, instrumentation and alerting using
+   Heroku, Terraform, InfluxDB, Grafana and Honeycomb.
+
+In addition to the technical work, I also performed duties as Team Lead and
+occasionally "Acting CTO".
+
+ * Grew engineering team from 4 to 20 consisting of a diverse group of
+   people. Streamlined onboarding, performed 1on1s with the team.
+ * I strongly believe in hiring junior engineers and continuing their
+   education. About 1/3 of our engineers were recent graduates of boot camps,
+   often as their first engineering job. Closely mentoring and providing a
+   supportive environment is a key part of this process.
+ * Created the technical interview process, which was used to hire most of the
+   team. I performed most of the early interviews, then trained the team to
+   also be able to conduct interviews, and iterate on the interview process.
+ * Defined features, scoped product objectives, and collaborated with
+   stakeholders to build a company roadmap.
+ * Instilled a culture of positivity and supportiveness, so the team felt
+   comfortable experimenting and learning from each other.
+ * Championed and supported Agile methodologies for the team, leading
+   standups and retros. Strong advocate of introspection and continuous
+   improvement of every aspect of building software and teams.
 
 ### Presentation ==[Service Objects With Dry.rb: Monads and Transactions][talk-dry-rubyconf]== RubyConf Denver *Nov 2021*
 
