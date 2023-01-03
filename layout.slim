@@ -17,7 +17,28 @@ html
 
     #page
 
-      == yield
+      == header
+
+      h2#achievements Professional Achievements
+
+      .achievements
+        - achievements.each do |achievement|
+          div class="achievement #{achievement.type}"
+            .time 
+              span.start_date
+                == achievement.start_date
+
+              - if achievement.end_date
+                span.end_date
+                  == achievement.end_date
+
+            .body
+              h3
+                span.title = achievement.title
+                span.company = achievement.company
+
+              .content
+                == achievement.content
 
     footer
 

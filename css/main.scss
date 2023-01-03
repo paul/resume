@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
+$fa-font-path: "webfonts";
 @import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/light.scss";
 
 // Mixins from compass
 
@@ -133,9 +135,10 @@ blockquote {
       @include fancy-header;
 
       &:before {
-        font-family: FontAwesome;
+        @extend %fa-icon;
+        @extend .fal;
+
         font-size: 1.75em;
-        font-weight: 300;
         margin: 0 0.5em 0 -1.5em;
         display: inline-block;
         width: 1em;
@@ -146,19 +149,19 @@ blockquote {
 
       &:first-child {
         &:before {
-          content: "\f003";
+          content: "\f2b6";
         }
       }
 
       &:nth-child(2) {
         &:before {
-          content: "\f13b";
+          content: "\f37e";
         }
       }
 
       &:nth-child(3) {
         &:before {
-          content: "\f09b";
+          content: "\f126";
         }
       }
 
@@ -184,6 +187,67 @@ blockquote {
   text-align: center;
 }
 
+.achievement {
+  display: flex;
+
+  .time {
+    flex: 0 0 6em;
+    max-width: 8em;
+    font-size: 1.17em;
+    display: block;
+  }
+
+  .end_date:before {
+    content: "\02014";
+  }
+
+  .title {
+    &:before {
+      @extend %fa-icon;
+      @extend .fal;
+
+      margin-right: 0.2em;
+      color: #666;
+    }
+  }
+
+  &.job {
+    .title:before {
+      content: "\f1ad";
+    }
+  }
+
+  &.talk {
+    .title:before {
+      content: "\f685";
+    }
+  }
+
+  &.oss {
+    .title:before {
+      content: "\f121";
+    }
+  }
+
+  .body {
+    flex: 1 1 auto;
+    border-left: 1px solid #999;
+    padding-left: 1ex;
+  }
+
+  h3 {
+    .title {
+      background-color: transparent;
+      @include fancy-header;
+
+      &:after {
+        color: $text;
+        content: " @";
+      }
+    }
+  }
+}
+
 h2 {
   text-transform: uppercase;
   font-size: 1.6em;
@@ -204,33 +268,12 @@ h2 {
     li > p {
       width: 100%;
 
-      & > em { // dates
-        float: right;
-      }
-
       & > a {
         color: $text;
       }
 
 
     }
-  }
-}
-
-h3 {
-  & > mark { // job title
-    background-color: transparent;
-    @include fancy-header;
-
-    &:after {
-      color: $text;
-      content: " @";
-    }
-
-  }
-
-  & > em {
-    float: right;
   }
 }
 

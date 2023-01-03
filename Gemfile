@@ -20,3 +20,5 @@ gem "rack"
 gem "puma"
 gem "rack-livereload"
 
+
+gem "amazing_print", "~> 1.4"

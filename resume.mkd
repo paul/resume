@@ -35,125 +35,93 @@ and leading a team of fellow developers and mentoring junior engineers.
  * Writing documentation, mentoring, pair-programming; soft skills we use to hone our craft collaboratively
  * Agile methodologies, Scrum
 
-## Conference Talks
+## Achievements
 
-### [Service Objects With Dry.rb: Monads and Transactions][talk-dry-rubyconf] *RubyConf Denver - Nov 2021*
+### Employment: ==Lead Software Architect== TextUs *Apr 2017 - Dec 2022*
 
-> Service objects are an important tool in your toolbox, and Dry.rb's
-> Transaction library is one of the most powerful, and one of the most magic.
-> It's a "business transaction" DSL, and has error handling as a primary
-> concern. We'll start by exploring Monads in Ruby (they're not scary!). Then
-> we'll see how that simple concept unlocks another level of service objects
-> that are far more robust and testable, and how to wire them all together with
-> Dry::Transaction. Finally we'll touch on extending transactions with custom
-> steps, and how to integrate them into an existing application.
+* Joined as 3rd engineer on a team that had an MVP Rails application. 
+  * Drastically improved reliability of message delivery by incorporating AWS
+    technologies API Gateway, SNS & SQS, and created Terraform tooling to
+    ensure consistency between Staging and Production.
+  * Also improved performance and scalability of message delivery to
+    accommodate customer usage.
+  * "Rescued" the existing test suite, improving runtime and reducing failure
+    rate.
+  * Implemented best-practices for monitoring and instrumentation, using
+    InfluxDB and Grafana, with Honeybadger for error notifications. Later
+    incorporated Honeycomb for tracing.
+* Once it became clear the existing application could not handle the scale we
+  wished to achieve with our new enterprise customers, I spearheaded a
+  greenfield re-write of a replacement Rails application.
+  * New app scaled from 1M Messages/day to over 50 Million, and 40,000 daily
+    active users.
+  * Expanded use of SQS for job queues to improve application reliability and
+    scalability.
+  * Implemented PostgreSQL best-practices: foreign key constraints, custom
+    domains, materialized views. Optimized queries, index usage, and stamping
+    down N+1s.
+  * Designed and built Hydra-based API for consumption by our Web UI, Mobile
+    apps and Chrome extension, as well as 3rd-party integrators. Worked closely
+    in conjunction with frontend engineers to develop an API that balanced
+    request count with payload size. Championed use of Hypermedia for the team
+    which delivered many positive benefits.
+  * Designed and built integration system for the reliable delivery of Webhooks
+    and 3rd-party API calls in the presence of unreliable customer and partner
+    services.
+  * Involved in design and implementation of every other major feature and
+    component.
+  * Built infrastructure for deployment, instrumentation and alerting using
+    Heroku, Terraform, InfluxDB, Grafana and Honeycomb.
+* In addition to the technical work, I also performed duties as Team Lead and Acting CTO.
+  * Grew engineering team from 4 to 20 consisting of a diverse group of
+    people. Streamlined onboarding, performed 1on1s with the team.
+  * I strongly believe in hiring junior engineers and continuing their
+    education. About 1/3 of our engineers were recent graduates of boot camps,
+    often as their first engineering job. Closely mentoring and providing a
+    supportive environment is a key part of this process.
+  * Created the technical interview process, which hired many key engineers. I
+    performed most of the early interviews, then trained the team to also be
+    able to conduct interviews.
+  * Defined features, scoped product objectives, and collaborated with
+    stakeholders to build a company roadmap.
+  * Instilled a culture of positivity and supportiveness, so the team felt
+    comfortable experimenting and learning from each other.
+  * Championed and supported Agile methodologies for the team, leading
+    standups and retros. Strong advocate of introspection and continuous
+    improvement of every aspect of building software and teams.
 
-This is a more polished version of the talk I gave at Boulder Ruby.
+### Presentation ==[Service Objects With Dry.rb: Monads and Transactions][talk-dry-rubyconf]== RubyConf Denver *Nov 2021*
 
-### [it { should be a_good_talk }; Writing Custom RSpec Matchers][talk-rspec] *Boulder Ruby Group - Jun 2020*
+*This is a more polished version of the talk I gave at Boulder Ruby.*
+
+Service objects are an important tool in your toolbox, and Dry.rb's Transaction
+library is one of the most powerful, and one of the most magic. It's a
+"business transaction" DSL, and has error handling as a primary concern. We'll
+start by exploring Monads in Ruby (they're not scary!). Then we'll see how that
+simple concept unlocks another level of service objects that are far more
+robust and testable, and how to wire them all together with Dry::Transaction.
+Finally we'll touch on extending transactions with custom steps, and how to
+integrate them into an existing application.
+
+
+### Presentation ==[it { should be a_good_talk }; Writing Custom RSpec Matchers][talk-rspec]== Boulder Ruby Group *Jun 2020*
    
-> Writing custom RSpec matchers can be helpful for writing simpler, DRY-er and
-> more descriptive specs. We'll talk about how they're used, how to make them,
-> and some useful ones I've discovered or created myself.<br>
+Writing custom RSpec matchers can be helpful for writing simpler, DRY-er and
+more descriptive specs. We'll talk about how they're used, how to make them,
+and some useful ones I've discovered or created myself.<br>
 
 I live-coded this talk, and there was a great discussion afterwards where it
 was helpful having that coding environment available to show participants.
 
-### [Better Service Objects with Dry::Transaction][talk-dry-boulderrb] *Boulder Ruby Group - Apr 2020*
+### Presentation ==[Better Service Objects with Dry::Transaction][talk-dry-boulderrb]== Boulder Ruby Group *Apr 2020*
 
-> Service objects are an important tool in your Rails toolbox, and
-> dry-transaction is one of the most powerful, and one of the most complicated.
-> It's a "business transaction" DSL, and has error handling as a primary
-> concern. This talk will give a background of how to use it, how to integrate
-> it with your Rails application, and advanced usage with some custom steps.
+Service objects are an important tool in your Rails toolbox, and
+dry-transaction is one of the most powerful, and one of the most complicated.
+It's a "business transaction" DSL, and has error handling as a primary concern.
+This talk will give a background of how to use it, how to integrate it with
+your Rails application, and advanced usage with some custom steps.
 
-### [Forms Don't Have to be this Complicated][talk-forms] *Mountain.rb - Oct 2010*
-
-In this talk, I lament how difficult it is to build complicated nested form in
-Rails & UJS. I offer a few solutions, including Form Objects. More recently,
-pure front-end apps in React or Ember have supplanted the need for a
-comprehensive solution in Rails itself.
-
-### [How HTTP Already Solved All Your Performance Problems 20 Years Ago][talk-http] *MountainWest RubyConf - Mar 2010*
-
-I describe several of the more powerful features provided by the HTTP protocol,
-which are supported by most basic HTTP clients in languages' stdlib, but not
-taken advantage of by most advanced client libraries.
-
-### [Writing Adapters for DataMapper][talk-datamapper] *MountainWest RubyConf - Mar 2009*
-
-As a member of the core team, I gave a tutorial on how to write custom adapters
-for the DataMapper ORM. Several adapters for other databases and web services
-were contributed as a result of this talk.
-
-## Open Source Projects
-
-### [progress_bar][progress_bar] *Creator*
-   * A very simple implementation of a CLI progress bar, similar to the output of cURL
-   * Mentored contributors to keep their pull requests small, focused, and well-tested
-   * It was originally intended primarily for personal use, but is now a dependency of several popular projects
-
-### [Resourceful][resourceful] *Co-Creator*
-   * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
-   * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
-   * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
-
-### [DataMapper][data_mapper] *Core Team*
-   * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
-   * Responded to issues and pull requests, and mentored new developers to get involved
-   * Redesigned and implemented DataMapper Adapters interface
-   * Designed and implemented Migrations plugin
-
-### Merb *Contributor*
-   * Heavily involved in design and implementation of Merb, preparing for release of 1.0
-   * Implemented support for conditional GET requests (304 response/Etag)
-   * Implemented correct handling of HTTP Accept header including negotiating
-     client and server priorities
-
-### [Collectd][collectd] *Contributor*
-   * Contributed the tokyo-tyrant collection plugin
-   * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
-
-Additionally, I have made smaller code contributions to numerous other OSS
-projects, including Rails, Rack, Awesomewm, KDE, and Arch Linux. I also tinker
-with smaller projects frequently and publish them to [GitHub][github].
-
-
-## Professional Experience
-
-### ==Lead Software Architect== TextUs *Apr 2017 - Present*
-   * Drastically increased reliability and performance of existing MVP
-     application by implementing RDBMS best practices and background queues.
-   * Led development and architecture of greenfield rewrite of the application,
-     once it became clear the MVP in place was insufficient for our new larger
-     customer profile:
-     * Designed and built infrastructure to deliver and receive 500MM SMS
-       messages a year across multiple providers with 100% reliability,
-       utilizing AWS Products and integrating them seamlessly with Rails' job
-       backend.
-     * Designed and built Hydra-based API for consumption by our Web UI, Mobile
-       apps and Chrome extension, as well as 3rd-party integrators. Worked
-       closely in conjunction with frontend engineers to develop an API that
-       balanced request count with payload size. Championed use of Hypermedia
-       for the team which delivered many positive benefits.
-     * Designed and built integration system for the reliable delivery of
-       webhooks in the presence of unreliable customer and partner services.
-     * Involved in design and implementation of every other major system and
-       component.
-   * Built infrastructure for deployment, instrumentation and alerting using
-     Heroku, Terraform, InfluxDB and Grafana.
-   * Partnered with CTO to scope product objectives, define features and manage
-     the engineering team.
-   * Grew engineering team from 4 to 20 consisting of a diverse group of
-     people. Streamlined onboarding process for mid- and senior-level
-     engineers, closely mentored junior engineers. 
-   * Instilled a culture of "its ok to make mistakes", so the team felt
-     comfortable experimenting and learning from each other.
-   * Championed and supported Agile methodologies for the team, leading
-     standups and retros. Strong advocate of introspection and continuous
-     improvement of every aspect of building software and teams.
-
-### ==Senior Engineer== Kapost *Feb 2015 - Mar 2017*
+### Employment: ==Senior Engineer== Kapost *Feb 2015 - Mar 2017*
    * Architected and implemented an application to collect and present
      analytics data. Utilized CouchDB and eventually Elasticsearch for
      analytics storage and aggregation, and SQS for background workers.
@@ -166,37 +134,83 @@ with smaller projects frequently and publish them to [GitHub][github].
    * Built Chat-Ops bots to allow team members to inquire about the state of
      the system, and deploy & provision ad-hoc staging environments.
 
-### ==Senior Engineer== RainforestQA *Aug 2014 - Feb 2015*
+### Employment: ==Senior Engineer== RainforestQA *Aug 2014 - Feb 2015*
    * Wrote a full-stack Rails application (Postgres, Ruby, CSS, JS) to provide testers with a one-time use email address
    * Added features to the open-source QueueClassic and QueueClassicAdmin gems
    * Troubleshooted performance issues relating to load from a "stampeding herd" effect from testers
    * Prototyped a replacement for a core component of the UI in Ember.js
 
-### ==Senior Engineer== Librato *Dec 2012 - Aug 2014*
+### Employment: ==Senior Engineer== Librato *Dec 2012 - Aug 2014*
    * Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics
    * Contributed to and coordinated feature development on the Librato open-source client libraries
    * Drove greater adoption of hypermedia concepts in the Librato API, both external and internal
    * Took charge of a website security audit and fixes to user-facing websites and APIs
    * Evaluated various JavaScript frameworks to use in a new frontend dashboard
 
-### ==API Developer== GitHub *Jun 2012 - Nov 2012*
+### Employment: ==API Developer== GitHub *Jun 2012 - Nov 2012*
    * Design and implemented hypermedia APIs for extracted micro-apps to communicate with the main app and each other
    * Made upgrades to various aspects of the GitHub API, and communicated those changes to users
    * Improved tooling for generation of documentation of the GitHub API
 
-### ==Senior Software Engineer== LivingSocial *Nov 2011 - Jun 2012*
+### Employment: ==Senior Software Engineer== LivingSocial *Nov 2011 - Jun 2012*
    * Took part in upgrades and enhancements to the email newsletter and notification delivery system
    * As a member of the API team, drove adoption of hypermedia APIs as part of a SOA refactor
    * Helped refactor a large Rails app by following the principles of TDD and Martin Fowler's *Refactoring*
 
-### ==Senior Software Engineer== Strobe *May 2011 - Oct 2011*
+### Employment: ==Senior Software Engineer== Strobe *May 2011 - Oct 2011*
    * Implemented a "ChatOps" continuous deployment system using Campfire and Chef
    * Created from scratch the Chef cookbooks and recipes to deploy the entire Strobe infrastructure to AWS
    * Set up a JenkinsCI cluster for continuous builds of Ruby/Rails, C++ and Clojure applications
    * Assisted other team members in getting their projects in CI and Chef for deployment
    * Helped implement a CDN/Caching proxy for customer assets in Clojure and Riak
 
-### ==Senior Software Engineer== Absolute Performance *2006 - May 2011*
+### Presentation: ==[Forms Don't Have to be this Complicated][talk-forms]== Mountain.rb *Oct 2010*
+
+In this talk, I lament how difficult it is to build complicated nested form in
+Rails & UJS. I offer a few solutions, including Form Objects. More recently,
+pure front-end apps in React or Ember have supplanted the need for a
+comprehensive solution in Rails itself.
+
+### Presentation: ==[How HTTP Already Solved All Your Performance Problems 20 Years Ago][talk-http]== MountainWest RubyConf *Mar 2010*
+
+I describe several of the more powerful features provided by the HTTP protocol,
+which are supported by most basic HTTP clients in languages' stdlib, but not
+taken advantage of by most advanced client libraries.
+
+### Presentation: ==[Writing Adapters for DataMapper][talk-datamapper]== MountainWest RubyConf *Mar 2009*
+
+As a member of the core team, I gave a tutorial on how to write custom adapters
+for the DataMapper ORM. Several adapters for other databases and web services
+were contributed as a result of this talk.
+
+### Open Source: ==[progress_bar][progress_bar]== Creator *Apr 2011 - Present*
+   * A very simple implementation of a CLI progress bar, similar to the output of cURL
+   * Mentored contributors to keep their pull requests small, focused, and well-tested
+   * It was originally intended primarily for personal use, but is now a dependency of several popular projects
+
+### Open Source: ==[Resourceful][resourceful]== Co-Creator *Oct 2007 - May 2011*
+   * Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby
+   * Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends
+   * Used to build other abstractions, such as object mappers for REST/Hypermedia APIs
+
+### Open Source: ==[DataMapper][data_mapper]== Core Team *2008 - 2010*
+   * Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0
+   * Responded to issues and pull requests, and mentored new developers to get involved
+   * Redesigned and implemented DataMapper Adapters interface
+   * Designed and implemented Migrations plugin
+
+### Open Source: ==Merb== Contributor *2008 - 2010*
+   * Heavily involved in design and implementation of Merb, preparing for release of 1.0
+   * Implemented support for conditional GET requests (304 response/Etag)
+   * Implemented correct handling of HTTP Accept header including negotiating
+     client and server priorities
+
+### Open Source: ==[Collectd][collectd]== Contributor *2009 - 2010*
+   * Contributed the tokyo-tyrant collection plugin
+   * Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server
+
+
+### Employment: ==Senior Software Engineer== Absolute Performance *2006 - 2011*
    * Rewrote an existing monolithic Perl web application into multiple Rails applications
    * Architected and developed new applications to interact with the main apps by hypermedia APIs
    * Accomplished an order of magnitude improvement in capability by implementation of HTTP caching
@@ -206,7 +220,7 @@ with smaller projects frequently and publish them to [GitHub][github].
    * Engaged in continuous deployment on non-cloud physical hardware at various customer locations
    * Invovled as primary architect of all layers of the stack, from Javascript UIs to database schemas
 
-### ==Senior Web Developer== InputOutput Unlimited *2002 - 2006*
+### Employment: ==Senior Web Developer== InputOutput Unlimited *2002 - 2006*
    * On a contract basis, implemented numerous web applications in PHP and later in Rails
    * Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements
 
@@ -232,6 +246,7 @@ with smaller projects frequently and publish them to [GitHub][github].
 [talk-forms]:         http://confreaks.com/videos/422-mountainrb2010-forms-don-t-have-to-be-this-complicated
 [talk-http]:          http://confreaks.com/videos/6-mwrc2010-how-http-already-solved-all-your-performance-problems-10-years-ago
 [talk-datamapper]:    http://confreaks.com/videos/74-mwrc2009-writing-adapters-for-datamapper
+[metadata]: #
 
 
 
