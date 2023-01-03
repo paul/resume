@@ -33,7 +33,7 @@
       
       <p>My full-stack experiences varies from digging into the nitty gritty of kernel
       stack traces and debating the merits of various Javascript frameworks, and
-      everything in between. As an engineering lead, I&#39;m also capable of recruiting
+      everything in between. As an engineering lead, I'm also capable of recruiting
       and leading a team of fellow developers and mentoring junior engineers.</p>
       
       <h2 id="notable-professional-skills">Notable Professional Skills</h2>
@@ -54,241 +54,423 @@
       <li>Agile methodologies, Scrum</li>
       </ul>
       
-      <h2 id="conference-talks">Conference Talks</h2>
       
-      <h3 id="service-objects-with-dry-rb-monads-and-transactions-rubyconf-denver-nov-2021"><a href="https://youtu.be/YXiqzHMmv_o">Service Objects With Dry.rb: Monads and Transactions</a> <em>RubyConf Denver - Nov 2021</em></h3>
-      
-      <blockquote>
-      <p>Service objects are an important tool in your toolbox, and Dry.rb&#39;s
-      Transaction library is one of the most powerful, and one of the most magic.
-      It&#39;s a &quot;business transaction&quot; DSL, and has error handling as a primary
-      concern. We&#39;ll start by exploring Monads in Ruby (they&#39;re not scary!). Then
-      we&#39;ll see how that simple concept unlocks another level of service objects
-      that are far more robust and testable, and how to wire them all together with
-      Dry::Transaction. Finally we&#39;ll touch on extending transactions with custom
-      steps, and how to integrate them into an existing application.</p>
-      </blockquote>
-      
-      <p>This is a more polished version of the talk I gave at Boulder Ruby.</p>
-      
-      <h3 id="it-should-be-a_good_talk-writing-custom-rspec-matchers-boulder-ruby-group-jun-2020"><a href="https://www.youtube.com/watch?v=EWdxs-fpiW0">it { should be a_good_talk }; Writing Custom RSpec Matchers</a> <em>Boulder Ruby Group - Jun 2020</em></h3>
-      
-      <blockquote>
-      <p>Writing custom RSpec matchers can be helpful for writing simpler, DRY-er and
-      more descriptive specs. We&#39;ll talk about how they&#39;re used, how to make them,
-      and some useful ones I&#39;ve discovered or created myself.<br></p>
-      </blockquote>
-      
-      <p>I live-coded this talk, and there was a great discussion afterwards where it
-      was helpful having that coding environment available to show participants.</p>
-      
-      <h3 id="better-service-objects-with-dry-transaction-boulder-ruby-group-apr-2020"><a href="https://www.youtube.com/watch?v=kkLaYoKOa-o">Better Service Objects with Dry::Transaction</a> <em>Boulder Ruby Group - Apr 2020</em></h3>
-      
-      <blockquote>
-      <p>Service objects are an important tool in your Rails toolbox, and
-      dry-transaction is one of the most powerful, and one of the most complicated.
-      It&#39;s a &quot;business transaction&quot; DSL, and has error handling as a primary
-      concern. This talk will give a background of how to use it, how to integrate
-      it with your Rails application, and advanced usage with some custom steps.</p>
-      </blockquote>
-      
-      <h3 id="forms-dont-have-to-be-this-complicated-mountain-rb-oct-2010"><a href="http://confreaks.com/videos/422-mountainrb2010-forms-don-t-have-to-be-this-complicated">Forms Don&#39;t Have to be this Complicated</a> <em>Mountain.rb - Oct 2010</em></h3>
-      
-      <p>In this talk, I lament how difficult it is to build complicated nested form in
-      Rails &amp; UJS. I offer a few solutions, including Form Objects. More recently,
-      pure front-end apps in React or Ember have supplanted the need for a
-      comprehensive solution in Rails itself.</p>
-      
-      <h3 id="how-http-already-solved-all-your-performance-problems-20-years-ago-mountainwest-rubyconf-mar-2010"><a href="http://confreaks.com/videos/6-mwrc2010-how-http-already-solved-all-your-performance-problems-10-years-ago">How HTTP Already Solved All Your Performance Problems 20 Years Ago</a> <em>MountainWest RubyConf - Mar 2010</em></h3>
-      
-      <p>I describe several of the more powerful features provided by the HTTP protocol,
-      which are supported by most basic HTTP clients in languages&#39; stdlib, but not
-      taken advantage of by most advanced client libraries.</p>
-      
-      <h3 id="writing-adapters-for-datamapper-mountainwest-rubyconf-mar-2009"><a href="http://confreaks.com/videos/74-mwrc2009-writing-adapters-for-datamapper">Writing Adapters for DataMapper</a> <em>MountainWest RubyConf - Mar 2009</em></h3>
-      
-      <p>As a member of the core team, I gave a tutorial on how to write custom adapters
-      for the DataMapper ORM. Several adapters for other databases and web services
-      were contributed as a result of this talk.</p>
-      
-      <h2 id="open-source-projects">Open Source Projects</h2>
-      
-      <h3 id="progress_bar-creator"><a href="https://github.com/paul/progress_bar">progress_bar</a> <em>Creator</em></h3>
-      
-      <ul>
-      <li>A very simple implementation of a CLI progress bar, similar to the output of cURL</li>
-      <li>Mentored contributors to keep their pull requests small, focused, and well-tested</li>
-      <li>It was originally intended primarily for personal use, but is now a dependency of several popular projects</li>
-      </ul>
-      
-      <h3 id="resourceful-co-creator"><a href="https://github.com/paul/resourceful">Resourceful</a> <em>Co-Creator</em></h3>
-      
-      <ul>
-      <li>Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby</li>
-      <li>Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends</li>
-      <li>Used to build other abstractions, such as object mappers for REST/Hypermedia APIs</li>
-      </ul>
-      
-      <h3 id="datamapper-core-team"><a href="http://datamapper.org">DataMapper</a> <em>Core Team</em></h3>
-      
-      <ul>
-      <li>Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0</li>
-      <li>Responded to issues and pull requests, and mentored new developers to get involved</li>
-      <li>Redesigned and implemented DataMapper Adapters interface</li>
-      <li>Designed and implemented Migrations plugin</li>
-      </ul>
-      
-      <h3 id="merb-contributor">Merb <em>Contributor</em></h3>
-      
-      <ul>
-      <li>Heavily involved in design and implementation of Merb, preparing for release of 1.0</li>
-      <li>Implemented support for conditional GET requests (304 response/Etag)</li>
-      <li>Implemented correct handling of HTTP Accept header including negotiating
-       client and server priorities</li>
-      </ul>
-      
-      <h3 id="collectd-contributor"><a href="https://collectd.org/wiki/index.php/Plugin:Write_HTTP">Collectd</a> <em>Contributor</em></h3>
-      
-      <ul>
-      <li>Contributed the tokyo-tyrant collection plugin</li>
-      <li>Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server</li>
-      </ul>
-      
-      <p>Additionally, I have made smaller code contributions to numerous other OSS
-      projects, including Rails, Rack, Awesomewm, KDE, and Arch Linux. I also tinker
-      with smaller projects frequently and publish them to <a href="https://github.com/paul">GitHub</a>.</p>
-      
-      <h2 id="professional-experience">Professional Experience</h2>
-      
-      <h3 id="lead-software-architect-textus-apr-2017-present"><mark>Lead Software Architect</mark> TextUs <em>Apr 2017 - Present</em></h3>
-      
-      <ul>
-      <li>Drastically increased reliability and performance of existing MVP
-       application by implementing RDBMS best practices and background queues.</li>
-      <li>Led development and architecture of greenfield rewrite of the application,
-       once it became clear the MVP in place was insufficient for our new larger
-       customer profile:
-      
-      <ul>
-      <li>Designed and built infrastructure to deliver and receive 500MM SMS
-      messages a year across multiple providers with 100% reliability,
-      utilizing AWS Products and integrating them seamlessly with Rails&#39; job
-      backend.</li>
-      <li>Designed and built Hydra-based API for consumption by our Web UI, Mobile
-      apps and Chrome extension, as well as 3rd-party integrators. Worked
-      closely in conjunction with frontend engineers to develop an API that
-      balanced request count with payload size. Championed use of Hypermedia
-      for the team which delivered many positive benefits.</li>
-      <li>Designed and built integration system for the reliable delivery of
-      webhooks in the presence of unreliable customer and partner services.</li>
-      <li>Involved in design and implementation of every other major system and
-      component.</li>
-      </ul></li>
-      <li>Built infrastructure for deployment, instrumentation and alerting using
-       Heroku, Terraform, InfluxDB and Grafana.</li>
-      <li>Partnered with CTO to scope product objectives, define features and manage
-       the engineering team.</li>
-      <li>Grew engineering team from 4 to 20 consisting of a diverse group of
-       people. Streamlined onboarding process for mid- and senior-level
-       engineers, closely mentored junior engineers. </li>
-      <li>Instilled a culture of &quot;its ok to make mistakes&quot;, so the team felt
-       comfortable experimenting and learning from each other.</li>
-      <li>Championed and supported Agile methodologies for the team, leading
-       standups and retros. Strong advocate of introspection and continuous
-       improvement of every aspect of building software and teams.</li>
-      </ul>
-      
-      <h3 id="senior-engineer-kapost-feb-2015-mar-2017"><mark>Senior Engineer</mark> Kapost <em>Feb 2015 - Mar 2017</em></h3>
-      
-      <ul>
-      <li>Architected and implemented an application to collect and present
-       analytics data. Utilized CouchDB and eventually Elasticsearch for
-       analytics storage and aggregation, and SQS for background workers.</li>
-      <li>Transitioned to a DevOps role, assisting other teams in building out
-       multiple apps in a microservices architecture.</li>
-      <li>Built scripts and configs to create a Docker-based development environment
-       to simplify developing against other teams&#39; apps.</li>
-      <li>Collaborated with teams to develop their features and products in a way
-       that integrated well with existing projects.</li>
-      <li>Built Chat-Ops bots to allow team members to inquire about the state of
-       the system, and deploy &amp; provision ad-hoc staging environments.</li>
-      </ul>
-      
-      <h3 id="senior-engineer-rainforestqa-aug-2014-feb-2015"><mark>Senior Engineer</mark> RainforestQA <em>Aug 2014 - Feb 2015</em></h3>
-      
-      <ul>
-      <li>Wrote a full-stack Rails application (Postgres, Ruby, CSS, JS) to provide testers with a one-time use email address</li>
-      <li>Added features to the open-source QueueClassic and QueueClassicAdmin gems</li>
-      <li>Troubleshooted performance issues relating to load from a &quot;stampeding herd&quot; effect from testers</li>
-      <li>Prototyped a replacement for a core component of the UI in Ember.js</li>
-      </ul>
-      
-      <h3 id="senior-engineer-librato-dec-2012-aug-2014"><mark>Senior Engineer</mark> Librato <em>Dec 2012 - Aug 2014</em></h3>
-      
-      <ul>
-      <li>Architected and implemented a queue/worker system in Ruby to import users&#39; AWS Cloudwatch data into Librato Metrics</li>
-      <li>Contributed to and coordinated feature development on the Librato open-source client libraries</li>
-      <li>Drove greater adoption of hypermedia concepts in the Librato API, both external and internal</li>
-      <li>Took charge of a website security audit and fixes to user-facing websites and APIs</li>
-      <li>Evaluated various JavaScript frameworks to use in a new frontend dashboard</li>
-      </ul>
-      
-      <h3 id="api-developer-github-jun-2012-nov-2012"><mark>API Developer</mark> GitHub <em>Jun 2012 - Nov 2012</em></h3>
-      
-      <ul>
-      <li>Design and implemented hypermedia APIs for extracted micro-apps to communicate with the main app and each other</li>
-      <li>Made upgrades to various aspects of the GitHub API, and communicated those changes to users</li>
-      <li>Improved tooling for generation of documentation of the GitHub API</li>
-      </ul>
-      
-      <h3 id="senior-software-engineer-livingsocial-nov-2011-jun-2012"><mark>Senior Software Engineer</mark> LivingSocial <em>Nov 2011 - Jun 2012</em></h3>
-      
-      <ul>
-      <li>Took part in upgrades and enhancements to the email newsletter and notification delivery system</li>
-      <li>As a member of the API team, drove adoption of hypermedia APIs as part of a SOA refactor</li>
-      <li>Helped refactor a large Rails app by following the principles of TDD and Martin Fowler&#39;s <em>Refactoring</em></li>
-      </ul>
-      
-      <h3 id="senior-software-engineer-strobe-may-2011-oct-2011"><mark>Senior Software Engineer</mark> Strobe <em>May 2011 - Oct 2011</em></h3>
-      
-      <ul>
-      <li>Implemented a &quot;ChatOps&quot; continuous deployment system using Campfire and Chef</li>
-      <li>Created from scratch the Chef cookbooks and recipes to deploy the entire Strobe infrastructure to AWS</li>
-      <li>Set up a JenkinsCI cluster for continuous builds of Ruby/Rails, C++ and Clojure applications</li>
-      <li>Assisted other team members in getting their projects in CI and Chef for deployment</li>
-      <li>Helped implement a CDN/Caching proxy for customer assets in Clojure and Riak</li>
-      </ul>
-      
-      <h3 id="senior-software-engineer-absolute-performance-2006-may-2011"><mark>Senior Software Engineer</mark> Absolute Performance <em>2006 - May 2011</em></h3>
-      
-      <ul>
-      <li>Rewrote an existing monolithic Perl web application into multiple Rails applications</li>
-      <li>Architected and developed new applications to interact with the main apps by hypermedia APIs</li>
-      <li>Accomplished an order of magnitude improvement in capability by implementation of HTTP caching</li>
-      <li>Revamped procedures to ship and deploy applications in various languages to remote customer sites</li>
-      <li>Implemented new features in various NoSQL databases, TokyoTyrant, MongoDB, and Redis</li>
-      <li>Encouraged the team to adopt automated Unit and Functional testing, as well as agile methods</li>
-      <li>Engaged in continuous deployment on non-cloud physical hardware at various customer locations</li>
-      <li>Invovled as primary architect of all layers of the stack, from Javascript UIs to database schemas</li>
-      </ul>
-      
-      <h3 id="senior-web-developer-inputoutput-unlimited-2002-2006"><mark>Senior Web Developer</mark> InputOutput Unlimited <em>2002 - 2006</em></h3>
-      
-      <ul>
-      <li>On a contract basis, implemented numerous web applications in PHP and later in Rails</li>
-      <li>Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements</li>
-      </ul>
-      
-      <h2 id="tech-id-love-to-use-learn-more-about-at-my-day-job">Tech I&#39;d love to use &amp; learn more about at my day job</h2>
-      
-      <ul>
-      <li>Rust</li>
-      <li>Crystal</li>
-      <li>Elm</li>
-      <li>Reverse Engineering</li>
-      <li>Hardware Development</li>
-      </ul>
-      
+      <h2 id="achievements">
+        Professional Achievements
+      </h2>
+      <div class="achievements">
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2017-04">Apr 2017</time></span><span class="end_date"><time datetime="2022-12">Dec 2022</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Lead Software Architect</span><span class="company"> TextUs </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Joined as 3rd engineer on a team that had an MVP Rails application. 
+              
+              <ul>
+              <li>Drastically improved reliability of message delivery by incorporating AWS
+              technologies API Gateway, SNS &amp; SQS, and created Terraform tooling to
+              ensure consistency between Staging and Production.</li>
+              <li>Also improved performance and scalability of message delivery to
+              accommodate customer usage.</li>
+              <li>"Rescued" the existing test suite, improving runtime and reducing failure
+              rate.</li>
+              <li>Implemented best-practices for monitoring and instrumentation, using
+              InfluxDB and Grafana, with Honeybadger for error notifications. Later
+              incorporated Honeycomb for tracing.</li>
+              </ul></li>
+              <li>Once it became clear the existing application could not handle the scale we
+              wished to achieve with our new enterprise customers, I spearheaded a
+              greenfield re-write of a replacement Rails application.
+              
+              <ul>
+              <li>New app scaled from 1M Messages/day to over 50 Million, and 40,000 daily
+              active users.</li>
+              <li>Expanded use of SQS for job queues to improve application reliability and
+              scalability.</li>
+              <li>Implemented PostgreSQL best-practices: foreign key constraints, custom
+              domains, materialized views. Optimized queries, index usage, and stamping
+              down N+1s.</li>
+              <li>Designed and built Hydra-based API for consumption by our Web UI, Mobile
+              apps and Chrome extension, as well as 3rd-party integrators. Worked closely
+              in conjunction with frontend engineers to develop an API that balanced
+              request count with payload size. Championed use of Hypermedia for the team
+              which delivered many positive benefits.</li>
+              <li>Designed and built integration system for the reliable delivery of Webhooks
+              and 3rd-party API calls in the presence of unreliable customer and partner
+              services.</li>
+              <li>Involved in design and implementation of every other major feature and
+              component.</li>
+              <li>Built infrastructure for deployment, instrumentation and alerting using
+              Heroku, Terraform, InfluxDB, Grafana and Honeycomb.</li>
+              </ul></li>
+              <li>In addition to the technical work, I also performed duties as Team Lead and Acting CTO.
+              
+              <ul>
+              <li>Grew engineering team from 4 to 20 consisting of a diverse group of
+              people. Streamlined onboarding, performed 1on1s with the team.</li>
+              <li>I strongly believe in hiring junior engineers and continuing their
+              education. About 1/3 of our engineers were recent graduates of boot camps,
+              often as their first engineering job. Closely mentoring and providing a
+              supportive environment is a key part of this process.</li>
+              <li>Created the technical interview process, which hired many key engineers. I
+              performed most of the early interviews, then trained the team to also be
+              able to conduct interviews.</li>
+              <li>Defined features, scoped product objectives, and collaborated with
+              stakeholders to build a company roadmap.</li>
+              <li>Instilled a culture of positivity and supportiveness, so the team felt
+              comfortable experimenting and learning from each other.</li>
+              <li>Championed and supported Agile methodologies for the team, leading
+              standups and retros. Strong advocate of introspection and continuous
+              improvement of every aspect of building software and teams.</li>
+              </ul></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2021-11">Nov 2021</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Service Objects With Dry.rb: Monads and Transactions</span><span class="company"> RubyConf Denver </span>
+            </h3>
+            <div class="content">
+              <p><em>This is a more polished version of the talk I gave at Boulder Ruby.</em></p><p>Service objects are an important tool in your toolbox, and Dry.rb's Transaction
+              library is one of the most powerful, and one of the most magic. It's a
+              "business transaction" DSL, and has error handling as a primary concern. We'll
+              start by exploring Monads in Ruby (they're not scary!). Then we'll see how that
+              simple concept unlocks another level of service objects that are far more
+              robust and testable, and how to wire them all together with Dry::Transaction.
+              Finally we'll touch on extending transactions with custom steps, and how to
+              integrate them into an existing application.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2020-06">Jun 2020</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">it { should be a_good_talk }; Writing Custom RSpec Matchers</span><span class="company"> Boulder Ruby Group </span>
+            </h3>
+            <div class="content">
+              <p>Writing custom RSpec matchers can be helpful for writing simpler, DRY-er and
+              more descriptive specs. We'll talk about how they're used, how to make them,
+              and some useful ones I've discovered or created myself.<br></p><p>I live-coded this talk, and there was a great discussion afterwards where it
+              was helpful having that coding environment available to show participants.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2020-04">Apr 2020</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Better Service Objects with Dry::Transaction</span><span class="company"> Boulder Ruby Group </span>
+            </h3>
+            <div class="content">
+              <p>Service objects are an important tool in your Rails toolbox, and
+              dry-transaction is one of the most powerful, and one of the most complicated.
+              It's a "business transaction" DSL, and has error handling as a primary concern.
+              This talk will give a background of how to use it, how to integrate it with
+              your Rails application, and advanced usage with some custom steps.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2015-02">Feb 2015</time></span><span class="end_date"><time datetime="2017-03">Mar 2017</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Engineer</span><span class="company"> Kapost </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Architected and implemented an application to collect and present
+               analytics data. Utilized CouchDB and eventually Elasticsearch for
+               analytics storage and aggregation, and SQS for background workers.</li>
+              <li>Transitioned to a DevOps role, assisting other teams in building out
+               multiple apps in a microservices architecture.</li>
+              <li>Built scripts and configs to create a Docker-based development environment
+               to simplify developing against other teams' apps.</li>
+              <li>Collaborated with teams to develop their features and products in a way
+               that integrated well with existing projects.</li>
+              <li>Built Chat-Ops bots to allow team members to inquire about the state of
+               the system, and deploy &amp; provision ad-hoc staging environments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2014-08">Aug 2014</time></span><span class="end_date"><time datetime="2015-02">Feb 2015</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Engineer</span><span class="company"> RainforestQA </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Wrote a full-stack Rails application (Postgres, Ruby, CSS, JS) to provide testers with a one-time use email address</li>
+              <li>Added features to the open-source QueueClassic and QueueClassicAdmin gems</li>
+              <li>Troubleshooted performance issues relating to load from a "stampeding herd" effect from testers</li>
+              <li>Prototyped a replacement for a core component of the UI in Ember.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2012-12">Dec 2012</time></span><span class="end_date"><time datetime="2014-08">Aug 2014</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Engineer</span><span class="company"> Librato </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Architected and implemented a queue/worker system in Ruby to import users' AWS Cloudwatch data into Librato Metrics</li>
+              <li>Contributed to and coordinated feature development on the Librato open-source client libraries</li>
+              <li>Drove greater adoption of hypermedia concepts in the Librato API, both external and internal</li>
+              <li>Took charge of a website security audit and fixes to user-facing websites and APIs</li>
+              <li>Evaluated various JavaScript frameworks to use in a new frontend dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2012-06">Jun 2012</time></span><span class="end_date"><time datetime="2012-11">Nov 2012</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">API Developer</span><span class="company"> GitHub </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Design and implemented hypermedia APIs for extracted micro-apps to communicate with the main app and each other</li>
+              <li>Made upgrades to various aspects of the GitHub API, and communicated those changes to users</li>
+              <li>Improved tooling for generation of documentation of the GitHub API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2011-11">Nov 2011</time></span><span class="end_date"><time datetime="2012-06">Jun 2012</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Software Engineer</span><span class="company"> LivingSocial </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Took part in upgrades and enhancements to the email newsletter and notification delivery system</li>
+              <li>As a member of the API team, drove adoption of hypermedia APIs as part of a SOA refactor</li>
+              <li>Helped refactor a large Rails app by following the principles of TDD and Martin Fowler's <em>Refactoring</em></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2011-05">May 2011</time></span><span class="end_date"><time datetime="2011-10">Oct 2011</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Software Engineer</span><span class="company"> Strobe </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Implemented a "ChatOps" continuous deployment system using Campfire and Chef</li>
+              <li>Created from scratch the Chef cookbooks and recipes to deploy the entire Strobe infrastructure to AWS</li>
+              <li>Set up a JenkinsCI cluster for continuous builds of Ruby/Rails, C++ and Clojure applications</li>
+              <li>Assisted other team members in getting their projects in CI and Chef for deployment</li>
+              <li>Helped implement a CDN/Caching proxy for customer assets in Clojure and Riak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2010-10">Oct 2010</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Forms Don&#39;t Have to be this Complicated</span><span class="company"> Mountain.rb </span>
+            </h3>
+            <div class="content">
+              <p>In this talk, I lament how difficult it is to build complicated nested form in
+              Rails &amp; UJS. I offer a few solutions, including Form Objects. More recently,
+              pure front-end apps in React or Ember have supplanted the need for a
+              comprehensive solution in Rails itself.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2010-03">Mar 2010</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">How HTTP Already Solved All Your Performance Problems 20 Years Ago</span><span class="company"> MountainWest RubyConf </span>
+            </h3>
+            <div class="content">
+              <p>I describe several of the more powerful features provided by the HTTP protocol,
+              which are supported by most basic HTTP clients in languages' stdlib, but not
+              taken advantage of by most advanced client libraries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement talk">
+          <div class="time">
+            <span class="start_date"><time datetime="2009-03">Mar 2009</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Writing Adapters for DataMapper</span><span class="company"> MountainWest RubyConf </span>
+            </h3>
+            <div class="content">
+              <p>As a member of the core team, I gave a tutorial on how to write custom adapters
+              for the DataMapper ORM. Several adapters for other databases and web services
+              were contributed as a result of this talk.</p>
+            </div>
+          </div>
+        </div>
+        <div class="achievement oss">
+          <div class="time">
+            <span class="start_date"><time datetime="2011-04">Apr 2011</time></span><span class="end_date"><time datetime="2023">Present</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">progress_bar</span><span class="company"> Creator </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>A very simple implementation of a CLI progress bar, similar to the output of cURL</li>
+              <li>Mentored contributors to keep their pull requests small, focused, and well-tested</li>
+              <li>It was originally intended primarily for personal use, but is now a dependency of several popular projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement oss">
+          <div class="time">
+            <span class="start_date"><time datetime="2007-10">Oct 2007</time></span><span class="end_date"><time datetime="2011-05">May 2011</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Resourceful</span><span class="company"> Co-Creator </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Implementation of a fully RFC2616-compliant HTTP/1.1 client in Ruby</li>
+              <li>Includes support for advanced features of HTTP, including support for redirects and caching with pluggable backends</li>
+              <li>Used to build other abstractions, such as object mappers for REST/Hypermedia APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement oss">
+          <div class="time">
+            <span class="start_date"><time datetime="2008">2008</time></span><span class="end_date"><time datetime="2010">2010</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">DataMapper</span><span class="company"> Core Team </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Heavily involved in design and implementation of DataMapper, and preparing for release of 1.0</li>
+              <li>Responded to issues and pull requests, and mentored new developers to get involved</li>
+              <li>Redesigned and implemented DataMapper Adapters interface</li>
+              <li>Designed and implemented Migrations plugin</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement oss">
+          <div class="time">
+            <span class="start_date"><time datetime="2008">2008</time></span><span class="end_date"><time datetime="2010">2010</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Merb</span><span class="company"> Contributor </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Heavily involved in design and implementation of Merb, preparing for release of 1.0</li>
+              <li>Implemented support for conditional GET requests (304 response/Etag)</li>
+              <li>Implemented correct handling of HTTP Accept header including negotiating
+               client and server priorities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement oss">
+          <div class="time">
+            <span class="start_date"><time datetime="2009">2009</time></span><span class="end_date"><time datetime="2010">2010</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Collectd</span><span class="company"> Contributor </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Contributed the tokyo-tyrant collection plugin</li>
+              <li>Contributed the write-http plugin, which will submit collected measurements via libcurl to an HTTP server</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2006">2006</time></span><span class="end_date"><time datetime="2011">2011</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Software Engineer</span><span class="company"> Absolute Performance </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>Rewrote an existing monolithic Perl web application into multiple Rails applications</li>
+              <li>Architected and developed new applications to interact with the main apps by hypermedia APIs</li>
+              <li>Accomplished an order of magnitude improvement in capability by implementation of HTTP caching</li>
+              <li>Revamped procedures to ship and deploy applications in various languages to remote customer sites</li>
+              <li>Implemented new features in various NoSQL databases, TokyoTyrant, MongoDB, and Redis</li>
+              <li>Encouraged the team to adopt automated Unit and Functional testing, as well as agile methods</li>
+              <li>Engaged in continuous deployment on non-cloud physical hardware at various customer locations</li>
+              <li>Invovled as primary architect of all layers of the stack, from Javascript UIs to database schemas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="achievement job">
+          <div class="time">
+            <span class="start_date"><time datetime="2002">2002</time></span><span class="end_date"><time datetime="2006">2006</time></span>
+          </div>
+          <div class="body">
+            <h3>
+              <span class="title">Senior Web Developer</span><span class="company"> InputOutput Unlimited </span>
+            </h3>
+            <div class="content">
+              <ul>
+              <li>On a contract basis, implemented numerous web applications in PHP and later in Rails</li>
+              <li>Created specifications and designs from (sometimes ambiguous) customer and stakeholder requirements</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       <h1>
