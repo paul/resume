@@ -30,12 +30,20 @@ and leading a team of fellow developers and mentoring junior engineers.
  * Javascript/ES6+/Typescript, CSS & SASS, Elm, Ember.js, React
  * Familiarity with Elixir, Rust, Go, Python, C, Crystal
  * Open Source Contributor & Maintainer
- * PostgreSQL, Elasticsearch, CouchDB, DynamoDB, Riak, MongoDB and other relational and non-relational databases
+ * PostgreSQL, Elasticsearch, CouchDB, DynamoDB, MongoDB and other relational and non-relational databases
  * Proficient at Bash scripting and Unix CLI tooling
  * Writing documentation, mentoring, pair-programming; soft skills we use to hone our craft collaboratively
  * Agile methodologies, Scrum
 
 ## Achievements
+
+### Employment: ==Staff Software Engineer== HouseAccount *Feb 2023 - Apr 2024*
+
+ * Architected and implemented CRM integrations system. HouseAccount needs to reliably push and pull customer data the service providers' CRMs, which are often unreliable and not built with this use-case in mind. I designed a system that allows us to re-use large amounts of logic and error handling, such that integrating with a new CRM involves implementing only a few classes and methods. In doing so, I reduced the implementation time for a new CRM from 6 months to 6 weeks, and can be accomplished by any member on the team.
+ * Similarly, I refactored our ViewComponents from being CRM-specific implementations to being generic, so that a single Component could be used to display the different data formats from the various CRMs. I leveraged several tools such as Presenters and Commands to accomplish this.
+ * Increased the interactivity of the site using Hotwire, Turbo and Stimulus. Refactored many of our Components to work more seamlessly with Turbo, and established and documented guidelines for building new Components.
+ * Coached and mentored the team in Rails and Web Development best-practices.
+ * Worked with the COO and VP of Product to define, scope and plan projects for myself and my team. Established processes between the team and product for new feature work, background chores like updates and refactoring, and prioritizing bugfixes and incident management.
 
 ### Employment: ==Lead Software Architect== TextUs *Apr 2017 - Dec 2022*
 
@@ -44,7 +52,7 @@ Joined as 3rd engineer on a team that had an existing MVP Rails application.
  * Drastically improved reliability of message delivery by incorporating AWS
    technologies API Gateway, SNS & SQS, and created Terraform tooling to
    ensure consistency between Staging and Production.
- * Also improved performance and scalability of message delivery to
+ * Improved performance and scalability of message delivery to
    accommodate customer usage.
  * "Rescued" the existing test suite, improving runtime and reducing failure
    rate.

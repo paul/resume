@@ -140,12 +140,13 @@ file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
   File.open("gh-pages/index.html", "w") { |f| f.write(content) }
 end
 
-file "gh-pages/Resume of Paul Sadauskas.pdf" => ["gh-pages/index.html", __FILE__] do
+file "gh-pages/Resume of Paul Sadauskas.pdf" => ["gh-pages/index.html", "gh-pages/css/main.css", __FILE__] do
   sh(
     "wkhtmltopdf",
     "--enable-local-file-access",
     "--enable-external-links",
     "--log-level", "info",
+    "--zoom", "0.8",
     "gh-pages/index.html",
     "gh-pages/Resume of Paul Sadauskas.pdf"
   )

@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
+//@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
 
 $fa-font-path: "webfonts";
 @import "./fontawesome/fontawesome.scss";
@@ -193,7 +193,6 @@ blockquote {
   .time {
     flex: 0 0 6em;
     max-width: 8em;
-    font-size: 1.17em;
     display: block;
   }
 
