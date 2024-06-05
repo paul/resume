@@ -14,42 +14,49 @@ html
     link rel="stylesheet" href="css/main.css"
 
   body
-
     #page
+      .hero
+        == hero
+      .contact 
+        == contact
 
-      == header
+      main
+        - sections.each do |section|
+          section class="#{section.id}"
+            == section.title
 
-      h2#achievements Professional Achievements
+            == section.content
 
-      .achievements
-        - achievements.each do |achievement|
-          div class="achievement #{achievement.type}"
-            .time 
-              span.start_date
-                == achievement.start_date
+            - if section.achievements 
+              .achievements
+                - section.achievements.each do |achievement|
+                  div class="achievement #{achievement.type}"
+                    .time 
+                      span.start_date
+                        == achievement.start_date
 
-              - if achievement.end_date
-                span.end_date
-                  == achievement.end_date
+                      - if achievement.end_date
+                        span.end_date
+                          == achievement.end_date
 
-            .body
-              h3
-                span.title = achievement.title
-                span.company = achievement.company
+                    .body
+                      h2
+                        span.title = achievement.title
+                        span.company = achievement.company
 
-              .content
-                == achievement.content
+                      .content
+                        == achievement.content
 
-    footer
+      footer
 
-      h1 Download Resume
-      ul
-        li
-          a href="https://github.com/paul/resume/blob/master/resume.mkd" Markdown/txt
-        li
-          a href="https://github.com/paul/resume/raw/gh-pages/Resume%20of%20Paul%20Sadauskas.pdf" PDF
-        li
-          a href="https://github.com/paul/resume" Source
+        h1 Download Resume
+        ul
+          li
+            a href="https://github.com/paul/resume/blob/master/resume.mkd" Markdown/txt
+          li
+            a href="https://github.com/paul/resume/raw/gh-pages/Resume%20of%20Paul%20Sadauskas.pdf" PDF
+          li
+            a href="https://github.com/paul/resume" Source
 
     javascript: 
       window.goatcounter = {

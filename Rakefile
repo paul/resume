@@ -1,93 +1,109 @@
 # frozen_string_literal: true
 
 require "date"
+require "ostruct"
 
 require "slim"
-require "redcarpet"
+require "kramdown"
 require "nokogiri"
+
 require "ap"
+require "debug"
 
 class ResumeScope
+  attr_reader :hero, :contact, :sections
+
   def initialize(html)
     @doc = Nokogiri::HTML5.fragment(html)
-  end
-
-  def header
-    nodes = Nokogiri::XML::NodeSet.new(Nokogiri::HTML5::Document.new)
+    sections = []
+    section = nil
     @doc.children.each do |node|
-      if node["id"] == "achievements"
-        break
-      end
-
-      nodes << node
-    end
-    nodes.to_html
-  end
-
-  def achievements
-    achievements = []
-    node = @doc.at_css("#achievements")
-    achievement = nil
-    while node = node.next
-      next if node.blank?
-      break if node.name == "h2"
-
-      if node.name == "h3"
-        achievements << achievement if achievement
-        achievement = Achievement.new(node)
+      if node.name == "h1"
+        sections << section
+        section = Section.new(node)
       else
-        achievement << node
+        section << node
       end
     end
-
-    achievements << achievement
-
-    achievements
+    sections << section
+    @hero, @contact, *@sections = *sections.compact
   end
 
-  class Achievement
-    def initialize(header)
-      @header = header
-      @type, @title, @company, @date = *header.children
+  class Section
+    attr_reader :id, :nodes, :achievements
+
+    def initialize(node)
+      @id = node["id"]
+      @title = node
       @content = Nokogiri::XML::NodeSet.new(Nokogiri::HTML5::Document.new)
+      @achievements = []
     end
 
-    def type
-      case @type.inner_text.strip
-      when /Employment/ then "job"
-      when /Presentation/ then "talk"
-      when /Open Source/ then "oss"
+    def <<(node)
+      if node.name == "h2" && @id != "hero"
+        @achievements << Achievement.new(node)
+      elsif ach = @achievements.last
+        ach << node
+      else
+        @content << node
       end
-    end
-
-    def start_date
-      text = @date.inner_text
-      text = text.split("-").first.strip
-      time_el(text)
-    end
-
-    def end_date
-      text = @date.inner_text
-      return unless text.include?("-")
-
-      text = text.split(" - ").last.strip
-      time_el(text)
     end
 
     def title
-      @title&.inner_text
-    end
-
-    def company
-      @company&.inner_text
+      @title.to_html
     end
 
     def content
       @content.to_html
     end
 
+    # Used by the hero and contact sections, to just render them
+    def to_html
+      Nokogiri::XML::NodeSet.new(Nokogiri::HTML5::Document.new).tap do |ns|
+        ns << @title
+        @content.each { |node| ns << node }
+      end.to_html
+    end
+    alias_method :to_s, :to_html
+  end
+
+  class Achievement
+    attr_reader :title, :company
+
+    def initialize(header)
+      @content = Nokogiri::XML::NodeSet.new(Nokogiri::HTML5::Document.new)
+      @title, @company, @date = header.children.map { |node| node.text.strip }
+    end
+
     def <<(node)
       @content << node
+    end
+
+    def content
+      @content.to_html
+    end
+
+    def type
+      "job"
+      # case @type.inner_text.strip
+      # when /Employment/ then "job"
+      # when /Presentation/ then "talk"
+      # when /Open Source/ then "oss"
+      # end
+    end
+
+    def start_date
+      text = @date
+      text = text.split("-").first.strip
+      time_el(text)
+    end
+
+    def end_date
+      text = @date
+      return unless text.include?("-")
+
+      text = text.split(" - ").last.strip
+      time_el(text)
     end
 
     def time_el(time)
@@ -105,19 +121,7 @@ class ResumeScope
   end
 end
 
-mkd_renderer_opts = {
-  with_toc_data: true
-}
-mkd_renderer = Redcarpet::Render::HTML.new(mkd_renderer_opts)
-
-mkd_extensions = {
-  no_intra_emphasis: true,
-  lax_spacing: true,
-  highlight: true
-}
-
 Slim::Engine.set_options pretty: true
-Slim::Embedded.set_options markdown: mkd_extensions
 
 desc "Render the page"
 task render: [
@@ -128,36 +132,38 @@ task render: [
 
 file "gh-pages/index.html" => ["resume.mkd", "layout.slim", __FILE__] do
   layout = Tilt.new("layout.slim")
-  # template = Tilt.new('resume.mkd')
-  # Tilt won't let me pass the right options to redcarpet
-  mkd = Redcarpet::Markdown.new(mkd_renderer, mkd_extensions)
-  html = mkd.render(File.read("resume.mkd"))
-
-  scope = ResumeScope.new(html)
+  # doc = Commonmarker.parse(File.read("resume.mkd"))
+  doc = Kramdown::Document.new(File.read("resume.mkd"))
+  scope = ResumeScope.new(doc.to_html)
 
   content = layout.render(scope)
 
-  File.open("gh-pages/index.html", "w") { |f| f.write(content) }
+  File.write("gh-pages/index.html", content)
 end
 
 file "gh-pages/Resume of Paul Sadauskas.pdf" => ["gh-pages/index.html", "gh-pages/css/main.css", __FILE__] do
+  # sh(
+  #   "podman",
+  #   "run",
+  #   "-v", "./gh-pages:/tmp/gh-pages:rw,Z,U",
+  #   "ghcr.io/surnet/alpine-wkhtmltopdf:3.20.0-0.12.6-full",
   sh(
     "wkhtmltopdf",
     "--enable-local-file-access",
     "--enable-external-links",
     "--log-level", "info",
-    "--zoom", "0.8",
-    "gh-pages/index.html",
-    "gh-pages/Resume of Paul Sadauskas.pdf"
+    "--zoom", "0.7",
+    "./gh-pages/index.html",
+    "./gh-pages/Resume of Paul Sadauskas.pdf"
   )
 end
 
 file "gh-pages/css/main.css" => "css/main.scss" do
-  sh("sassc", "css/main.scss", "gh-pages/css/main.css")
+  sh("dartsass", "css/main.scss", "gh-pages/css/main.css")
 end
 
 file "gh-pages/css/print.css" => "css/print.scss" do
-  sh("sassc", "css/print.scss", "gh-pages/css/print.css")
+  sh("dartsass", "css/print.scss", "gh-pages/css/print.css")
 end
 
 webfonts = "gh-pages/css/webfonts"

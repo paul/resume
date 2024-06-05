@@ -36,6 +36,8 @@ GEM
       puma (~> 3.11)
       rack (~> 2.0)
     http_parser.rb (0.8.0)
+    kramdown (2.4.0)
+      rexml
     launchy (2.5.2)
       addressable (~> 2.8)
     listen (3.7.1)
@@ -63,13 +65,15 @@ GEM
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redcarpet (3.5.1)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
     sassc (2.4.0)
       ffi (~> 1.9)
     shellany (0.0.1)
     slim (4.1.0)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
+    strscan (3.1.0)
     temple (0.8.2)
     thor (1.2.1)
     tilt (2.0.11)
@@ -83,11 +87,11 @@ DEPENDENCIES
   guard-livereload
   guard-rake
   heel
+  kramdown
   puma
   rack
   rack-livereload
   rake
-  redcarpet
   sassc
   slim
 

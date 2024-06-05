@@ -17,21 +17,26 @@ $fa-font-path: "webfonts";
 
 // Turn off the bullet for an element of a list
 @mixin no-bullet {
-  list-style-image : none;
-  list-style-type  : none;
-  margin-left      : 0;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
 }
 
 // turns off the bullets for an entire list
 @mixin no-bullets {
   list-style: none;
-  li { @include no-bullet; }
+
+  li {
+    @include no-bullet;
+  }
 }
 
 // makes a list inline.
 @mixin inline-list {
   list-style-type: none;
-  &, & li {
+
+  &,
+  & li {
     margin: 0;
     padding: 0;
     display: inline;
@@ -43,7 +48,7 @@ $text: #111;
 
 @mixin fancy-header {
   color: $header;
-  text-transform: uppercase;
+  font-variant-caps: small-caps;
 }
 
 @media print {
@@ -51,7 +56,12 @@ $text: #111;
     //-moz-transform: rotate(-90deg) scale(.50,.50);
     zoom: 60%;
     color: #000;
-    a { color: #000 };
+
+    a {
+      color: #000
+    }
+
+    ;
   }
 
   #printFooter {
@@ -77,7 +87,9 @@ body {
   // line-height: 24px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 300;
   margin: 0;
 }
@@ -94,6 +106,11 @@ li {
   list-style-type: square;
 }
 
+b,
+strong {
+  font-weight: 500;
+}
+
 blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -103,36 +120,60 @@ blockquote {
 }
 
 #page {
-  margin: 1em;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 16rem;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hero contact"
+    "main main"
+    "footer footer";
+
+  padding: 4rem 0;
 }
 
-#paul-sadauskas {
-  text-transform: uppercase;
+.hero {
+  grid-area: hero;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.hero h1 {
+  font-variant-caps: small-caps;
   margin: 0;
   font-size: 4em;
 }
 
-#senior-web-application-engineer {
-  @include fancy-header;
+.hero h2 {
+  font-variant-caps: small-caps;
   font-size: 2em;
   margin-top: 0;
 }
 
-#contact-info {
-  @include squish-text;
+.contact {
+  h1 {
+    @include squish-text;
+  }
 
-  & + ul {
-    position: absolute;
-    top: 0;
-    right: 0;
+  ul {
     padding-right: 3em;
 
     @include no-bullets;
 
     li {
       margin-bottom: 0.75em;
-      @include fancy-header;
+      font-size: 1.2rem;
+      color: $header;
+      text-transform: uppercase;
 
       &:before {
         @extend %fa-icon;
@@ -143,7 +184,7 @@ blockquote {
         display: inline-block;
         width: 1em;
         position: relative;
-        top: 8px;
+        top: 12px;
         color: #666;
       }
 
@@ -172,6 +213,8 @@ blockquote {
       color: $text;
       text-decoration: none;
       text-transform: none;
+      font-variant-caps: normal;
+      font-size: 1rem;
 
       &:hover {
         text-decoration: underline;
@@ -180,11 +223,14 @@ blockquote {
   }
 }
 
-#passionate-about-the-craft-of-creating-software {
+#about {
   display: block;
-  margin: 3em auto 0 auto;
+  margin: 2em auto 0 auto;
   width: 100%;
   text-align: center;
+
+  color: $text;
+  font-size: 2.5em;
 }
 
 .achievement {
@@ -192,7 +238,7 @@ blockquote {
 
   .time {
     flex: 0 0 6em;
-    max-width: 8em;
+    max-width: 10em;
     display: block;
   }
 
@@ -210,69 +256,99 @@ blockquote {
     }
   }
 
-  &.job {
-    .title:before {
-      content: "\f1ad";
-    }
-  }
-
-  &.talk {
-    .title:before {
-      content: "\f685";
-    }
-  }
-
-  &.oss {
-    .title:before {
-      content: "\f121";
-    }
-  }
-
   .body {
     flex: 1 1 auto;
     border-left: 1px solid #999;
     padding-left: 1ex;
   }
 
-  h3 {
+  h2 {
     .title {
       background-color: transparent;
-      @include fancy-header;
 
-      &:after {
-        color: $text;
-        content: " @";
+    }
+
+    .company:before {
+      color: $text;
+      content: " @";
+    }
+
+  }
+}
+
+section {
+  h1 {
+    @include fancy-header();
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.17em;
+
+    &+ul {
+      font-size: 1em;
+      text-transform: none;
+
+      li>p {
+        width: 100%;
+
+        &>a {
+          color: $text;
+        }
+
+
       }
     }
   }
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 1.6em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+.skills {
+  h1:before {
+    @extend %fa-icon;
+    @extend .fal;
 
-  &:before {
-    font-family: FontAwesome;
-    color: $header;
-    content: "\f105";
-    padding-right: 0.5ex;
+    margin-right: 0.2em;
+    content: "\f53f";
   }
+}
 
-  & + ul {
-    font-size: 1em;
-    text-transform: none;
+.jobs {
+  h1:before {
+    @extend %fa-icon;
+    @extend .fal;
 
-    li > p {
-      width: 100%;
+    margin-right: 0.2em;
+    content: "\f1ad";
+  }
+}
 
-      & > a {
-        color: $text;
-      }
+.talks {
+  h1:before {
+    @extend %fa-icon;
+    @extend .fal;
 
+    margin-right: 0.2em;
+    content: "\f685";
+  }
+}
 
-    }
+.opensource {
+  h1:before {
+    @extend %fa-icon;
+    @extend .fal;
+
+    margin-right: 0.2em;
+    content: "\f121";
+  }
+}
+
+.tech {
+  h1:before {
+    @extend %fa-icon;
+    @extend .fal;
+
+    margin-right: 0.2em;
+    content: "\f0eb";
   }
 }
 
@@ -280,9 +356,8 @@ footer {
   margin-bottom: 3em;
 
   h1 {
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 1.2em;
+    font-size: 2em;
+    @include fancy-header();
   }
 
   ul {

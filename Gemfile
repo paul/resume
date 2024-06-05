@@ -9,16 +9,15 @@ gem "guard"
 gem "guard-livereload"
 gem "guard-rake"
 
-gem "redcarpet"
+gem "kramdown"
 gem "slim"
 
 gem "sassc"
 
 gem "heel"
 
-gem "rack"
 gem "puma"
+gem "rack"
 gem "rack-livereload"
-
 
 gem "amazing_print", "~> 1.4"
