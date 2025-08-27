@@ -50,6 +50,15 @@ your product and your team, then I'd be a great choice to help you out.
 
 # Professional Accomplishments {#jobs}
 
+## **Lead Rails Engineer** Unsupervised *Jun 2024 - Aug 2025*
+
+ * Worked with the team to modernize and stabilize a large Rails application, introducing modern
+ best-practices such as RSpec with factories and Cuprite, and view components with Phlex.
+ * Coached and mentored the team in Rails and Web Development best-practices.
+ * Interacted heavily with various LLMs from all the major providers, both through the APIs to
+ implement features in the application including tools and MCP, as well as a consumer to assist with
+ development tasks such as writing code, documentation, and debugging.
+
 ## **Staff Software Engineer** HouseAccount *Feb 2023 - Apr 2024*
 
  * Architected and implemented CRM integrations system. HouseAccount needs to reliably push and pull
